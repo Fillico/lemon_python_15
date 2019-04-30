@@ -6,7 +6,10 @@ import HTMLTestRunnerNew
 import os
 import unittest
 from python_api_3.common import contants
-from python_api_3.testcases import test_login, test_recharge, test_add, test_bidLoan
+import sys
+
+sys.path.append('./')
+print(sys.path)
 
 suite = unittest.TestSuite()
 loader = unittest.TestLoader()
