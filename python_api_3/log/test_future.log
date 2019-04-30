@@ -2859,3 +2859,802 @@
 2019-04-28 12:59:26,575-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：年化率小于0
 2019-04-28 12:59:26,575-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'biddingDays': '11', 'amount': '600', 'loanRate': '-18.0', 'loanDateType': '3', 'loanTerm': '6', 'title': '测试加标，借款二十万', 'memberId': '1030', 'repaymemtWay': '4'}
 2019-04-28 12:59:26,709-INFO-do_log.py-[line:28]-add-日志信息：结束测试：年化率小于0
+2019-04-30 16:22:07,272-INFO-do_log.py-[line:28]-add-日志信息：准备测试前置
+2019-04-30 16:22:07,865-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：不登录直接加标
+2019-04-30 16:22:07,865-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'title': '测试加标，借款二十万', 'repaymemtWay': '4', 'biddingDays': '6', 'loanTerm': '6', 'loanDateType': '0', 'memberId': '1030', 'amount': '600', 'loanRate': '18.0'}
+2019-04-30 16:22:08,257-INFO-do_log.py-[line:28]-add-日志信息：结束测试：不登录直接加标
+2019-04-30 16:22:08,259-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：正常登录
+2019-04-30 16:22:08,259-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '12345678', 'mobilephone': '13660000111'}
+2019-04-30 16:22:08,426-INFO-do_log.py-[line:28]-add-日志信息：结束测试：正常登录
+2019-04-30 16:22:08,427-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：新增一个项目，借款人id在member表中已存在
+2019-04-30 16:22:08,428-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'title': '测试加标，借款二十万', 'repaymemtWay': '4', 'biddingDays': '6', 'loanTerm': '6', 'loanDateType': '0', 'memberId': '1030', 'amount': '600', 'loanRate': '18.0'}
+2019-04-30 16:22:08,611-INFO-do_log.py-[line:28]-add-日志信息：结束测试：新增一个项目，借款人id在member表中已存在
+2019-04-30 16:22:08,611-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：新增一个项目，借款人id在member表中不存在
+2019-04-30 16:22:08,614-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'title': '测试加标，借款二十万', 'repaymemtWay': '4', 'biddingDays': '6', 'loanTerm': '6', 'loanDateType': '0', 'memberId': '2542254', 'amount': '600', 'loanRate': '18.0'}
+2019-04-30 16:22:08,763-INFO-do_log.py-[line:28]-add-日志信息：结束测试：新增一个项目，借款人id在member表中不存在
+2019-04-30 16:22:08,763-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：新增一个项目，借款人id存在，不输入借款标题
+2019-04-30 16:22:08,763-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'title': '', 'repaymemtWay': '4', 'biddingDays': '6', 'loanTerm': '6', 'loanDateType': '0', 'memberId': '1030', 'amount': '600', 'loanRate': '18.0'}
+2019-04-30 16:22:08,908-INFO-do_log.py-[line:28]-add-日志信息：结束测试：新增一个项目，借款人id存在，不输入借款标题
+2019-04-30 16:22:08,910-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：不填写借款金额
+2019-04-30 16:22:08,910-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'title': '', 'repaymemtWay': '4', 'biddingDays': '6', 'loanTerm': '6', 'loanDateType': '0', 'memberId': '1030', 'amount': '', 'loanRate': '18.0'}
+2019-04-30 16:22:09,030-INFO-do_log.py-[line:28]-add-日志信息：结束测试：不填写借款金额
+2019-04-30 16:22:09,030-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：不填写年利率
+2019-04-30 16:22:09,030-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'title': '测试加标，借款二十万', 'repaymemtWay': '4', 'biddingDays': '6', 'loanTerm': '6', 'loanDateType': '0', 'memberId': '1030', 'amount': '600', 'loanRate': ''}
+2019-04-30 16:22:09,158-INFO-do_log.py-[line:28]-add-日志信息：结束测试：不填写年利率
+2019-04-30 16:22:09,158-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：不填写借款期限
+2019-04-30 16:22:09,160-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'title': '测试加标，借款二十万', 'repaymemtWay': '4', 'biddingDays': '6', 'loanTerm': '', 'loanDateType': '0', 'memberId': '1030', 'amount': '600', 'loanRate': '18.0'}
+2019-04-30 16:22:09,296-INFO-do_log.py-[line:28]-add-日志信息：结束测试：不填写借款期限
+2019-04-30 16:22:09,296-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：不填写借款期限类型
+2019-04-30 16:22:09,296-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'title': '测试加标，借款二十万', 'repaymemtWay': '4', 'biddingDays': '6', 'loanTerm': '6', 'loanDateType': '0', 'memberId': '1030', 'amount': '600', 'loanRate': '18.0'}
+2019-04-30 16:22:09,430-ERROR-do_log.py-[line:34]-add-日志信息：case:不填写借款期限类型,请求的数据:{"memberId":"1030","title":"测试加标，借款二十万","loanRate":"18.0","amount":"600","loanTerm":"6","loanDateType":"0","repaymemtWay":"4","biddingDays":"6"},测试报错：'{"status":0,"code":"20103","data":null,"msg":"所有参数不能为空"}' != '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'
+- {"status":0,"code":"20103","data":null,"msg":"所有参数不能为空"}
+?           ^         ^  --                     ^^^^^^^^
++ {"status":1,"code":"10001","data":null,"msg":"加标成功"}
+?           ^         ^^^                       ^^^^
+
+2019-04-30 16:22:09,448-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：不填写还款方式
+2019-04-30 16:22:09,450-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'title': '测试加标，借款二十万', 'repaymemtWay': '', 'biddingDays': '6', 'loanTerm': '6', 'loanDateType': '0', 'memberId': '1030', 'amount': '600', 'loanRate': '18.0'}
+2019-04-30 16:22:09,562-INFO-do_log.py-[line:28]-add-日志信息：结束测试：不填写还款方式
+2019-04-30 16:22:09,562-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：不填写竞标天数
+2019-04-30 16:22:09,562-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'title': '测试加标，借款二十万', 'repaymemtWay': '4', 'biddingDays': '', 'loanTerm': '6', 'loanDateType': '0', 'memberId': '1030', 'amount': '600', 'loanRate': '18.0'}
+2019-04-30 16:22:09,693-INFO-do_log.py-[line:28]-add-日志信息：结束测试：不填写竞标天数
+2019-04-30 16:22:09,693-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：竞标天数写0天
+2019-04-30 16:22:09,694-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'title': '测试加标，借款二十万', 'repaymemtWay': '4', 'biddingDays': '0', 'loanTerm': '6', 'loanDateType': '0', 'memberId': '1030', 'amount': '600', 'loanRate': '18.0'}
+2019-04-30 16:22:09,821-ERROR-do_log.py-[line:34]-add-日志信息：case:竞标天数写0天,请求的数据:{"memberId":"1030","title":"测试加标，借款二十万","loanRate":"18.0","amount":"600","loanTerm":"6","loanDateType":"0","repaymemtWay":"4","biddingDays":"0"},测试报错：'{"status":0,"code":"20103","data":null,"msg":"竞标天数应为1-10"}' != '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'
+- {"status":0,"code":"20103","data":null,"msg":"竞标天数应为1-10"}
+?           ^         ^  --                     ^ ^^^^^^^^
++ {"status":1,"code":"10001","data":null,"msg":"加标成功"}
+?           ^         ^^^                       ^ ^^
+
+2019-04-30 16:22:09,822-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：竞标天数写1天
+2019-04-30 16:22:09,822-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'title': '测试加标，借款二十万', 'repaymemtWay': '4', 'biddingDays': '10', 'loanTerm': '6', 'loanDateType': '0', 'memberId': '1030', 'amount': '600', 'loanRate': '18.0'}
+2019-04-30 16:22:09,969-INFO-do_log.py-[line:28]-add-日志信息：结束测试：竞标天数写1天
+2019-04-30 16:22:09,969-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：竞标天数写10天
+2019-04-30 16:22:09,970-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'title': '测试加标，借款二十万', 'repaymemtWay': '4', 'biddingDays': '10', 'loanTerm': '6', 'loanDateType': '0', 'memberId': '1030', 'amount': '600', 'loanRate': '18.0'}
+2019-04-30 16:22:10,132-INFO-do_log.py-[line:28]-add-日志信息：结束测试：竞标天数写10天
+2019-04-30 16:22:10,132-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：竞标天数写11天
+2019-04-30 16:22:10,134-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'title': '测试加标，借款二十万', 'repaymemtWay': '4', 'biddingDays': '11', 'loanTerm': '6', 'loanDateType': '0', 'memberId': '1030', 'amount': '600', 'loanRate': '18.0'}
+2019-04-30 16:22:10,282-ERROR-do_log.py-[line:34]-add-日志信息：case:竞标天数写11天,请求的数据:{"memberId":"1030","title":"测试加标，借款二十万","loanRate":"18.0","amount":"600","loanTerm":"6","loanDateType":"0","repaymemtWay":"4","biddingDays":"11"},测试报错：'{"status":0,"code":"20103","data":null,"msg":"竞标天数应为1-10"}' != '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'
+- {"status":0,"code":"20103","data":null,"msg":"竞标天数应为1-10"}
+?           ^         ^  --                     ^ ^^^^^^^^
++ {"status":1,"code":"10001","data":null,"msg":"加标成功"}
+?           ^         ^^^                       ^ ^^
+
+2019-04-30 16:22:10,282-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：借款类型输入除0，2，4之外的其他数字
+2019-04-30 16:22:10,282-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'title': '测试加标，借款二十万', 'repaymemtWay': '4', 'biddingDays': '11', 'loanTerm': '6', 'loanDateType': '3', 'memberId': '1030', 'amount': '600', 'loanRate': '18.0'}
+2019-04-30 16:22:10,407-INFO-do_log.py-[line:28]-add-日志信息：结束测试：借款类型输入除0，2，4之外的其他数字
+2019-04-30 16:22:10,407-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：年化率大于24%
+2019-04-30 16:22:10,407-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'title': '测试加标，借款二十万', 'repaymemtWay': '4', 'biddingDays': '11', 'loanTerm': '6', 'loanDateType': '3', 'memberId': '1030', 'amount': '600', 'loanRate': '25.0'}
+2019-04-30 16:22:10,578-INFO-do_log.py-[line:28]-add-日志信息：结束测试：年化率大于24%
+2019-04-30 16:22:10,578-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：年化率等于0
+2019-04-30 16:22:10,578-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'title': '测试加标，借款二十万', 'repaymemtWay': '4', 'biddingDays': '11', 'loanTerm': '6', 'loanDateType': '3', 'memberId': '1030', 'amount': '600', 'loanRate': '0'}
+2019-04-30 16:22:10,703-INFO-do_log.py-[line:28]-add-日志信息：结束测试：年化率等于0
+2019-04-30 16:22:10,703-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：年化率小于0
+2019-04-30 16:22:10,703-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'title': '测试加标，借款二十万', 'repaymemtWay': '4', 'biddingDays': '11', 'loanTerm': '6', 'loanDateType': '3', 'memberId': '1030', 'amount': '600', 'loanRate': '-18.0'}
+2019-04-30 16:22:10,823-INFO-do_log.py-[line:28]-add-日志信息：结束测试：年化率小于0
+2019-04-30 16:22:10,823-INFO-do_log.py-[line:28]-bidLoan-日志信息：准备测试前置
+2019-04-30 16:22:10,990-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：不登录，直接投标
+2019-04-30 16:22:10,990-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '100'}
+2019-04-30 16:22:11,203-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:不登录，直接投标,请求的数据:{"mobilephone":"13660000111","amount":"100"},测试通过
+2019-04-30 16:22:11,203-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：不登录，直接投标
+2019-04-30 16:22:11,204-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：正常登录
+2019-04-30 16:22:11,204-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '12345678', 'mobilephone': '13660000111'}
+2019-04-30 16:22:11,436-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:正常登录,请求的数据:{"mobilephone":"13660000111","pwd":"12345678"},测试通过
+2019-04-30 16:22:11,436-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：正常登录
+2019-04-30 16:22:11,436-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：新增一个项目，借款人id在member表中已存在
+2019-04-30 16:22:11,437-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'title': '测试加标，借款二十万', 'repaymemtWay': '4', 'biddingDays': '6', 'loanTerm': '6', 'loanDateType': '0', 'memberId': '2738', 'amount': '200000', 'loanRate': '18.0'}
+2019-04-30 16:22:11,687-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:新增一个项目，借款人id在member表中已存在,请求的数据:{"memberId":"2738","title":"测试加标，借款二十万","loanRate":"18.0","amount":"200000","loanTerm":"6","loanDateType":"0","repaymemtWay":"4","biddingDays":"6"},测试通过
+2019-04-30 16:22:11,687-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：新增一个项目，借款人id在member表中已存在
+2019-04-30 16:22:11,687-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的是未开始状态，用户投资金额是100的倍数，并且小于剩余可投金额
+2019-04-30 16:22:11,687-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'memberId': '2738', 'amount': '100000000', 'loanId': '6434'}
+2019-04-30 16:22:11,819-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的是未开始状态，用户投资金额是100的倍数，并且小于剩余可投金额,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6434","amount":"100000000"},测试通过
+2019-04-30 16:22:11,819-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的是未开始状态，用户投资金额是100的倍数，并且小于剩余可投金额
+2019-04-30 16:22:11,819-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：审核新增加的标
+2019-04-30 16:22:11,819-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'status': 4, 'id': '6434'}
+2019-04-30 16:22:11,986-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:审核新增加的标,请求的数据:{"id":"6434","status":4},测试通过
+2019-04-30 16:22:11,986-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：审核新增加的标
+2019-04-30 16:22:11,986-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的状态是投标中，用户投资金额是100的倍数，并且小于剩余可投金额
+2019-04-30 16:22:11,986-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'memberId': '2738', 'amount': '190000', 'loanId': '6434'}
+2019-04-30 16:22:12,180-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的状态是投标中，用户投资金额是100的倍数，并且小于剩余可投金额,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6434","amount":"190000"},测试通过
+2019-04-30 16:22:12,266-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的状态是投标中，用户投资金额是100的倍数，并且小于剩余可投金额
+2019-04-30 16:22:12,266-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的状态是投标中，用户投资金额是100的倍数，并且大于剩余可投金额
+2019-04-30 16:22:12,269-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'memberId': '2738', 'amount': '30000', 'loanId': '6434'}
+2019-04-30 16:22:12,538-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的状态是投标中，用户投资金额是100的倍数，并且大于剩余可投金额,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6434","amount":"30000"},测试通过
+2019-04-30 16:22:12,538-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的状态是投标中，用户投资金额是100的倍数，并且大于剩余可投金额
+2019-04-30 16:22:12,539-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的状态是投标中，用户投资金额是0
+2019-04-30 16:22:12,539-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'memberId': '2738', 'amount': '0', 'loanId': '6434'}
+2019-04-30 16:22:12,707-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的状态是投标中，用户投资金额是0,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6434","amount":"0"},测试通过
+2019-04-30 16:22:12,707-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的状态是投标中，用户投资金额是0
+2019-04-30 16:22:12,709-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的状态是投标中，用户投资金额不是100的倍数，并且小于剩余可投金额
+2019-04-30 16:22:12,709-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'memberId': '2738', 'amount': '699', 'loanId': '6434'}
+2019-04-30 16:22:12,848-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的状态是投标中，用户投资金额不是100的倍数，并且小于剩余可投金额,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6434","amount":"699"},测试通过
+2019-04-30 16:22:12,849-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的状态是投标中，用户投资金额不是100的倍数，并且小于剩余可投金额
+2019-04-30 16:22:12,849-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的状态是投标中，用户投资金额是100的倍数，并且等于剩余可投金额
+2019-04-30 16:22:12,849-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'memberId': '2738', 'amount': '10000', 'loanId': '6434'}
+2019-04-30 16:22:13,003-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的状态是投标中，用户投资金额是100的倍数，并且等于剩余可投金额,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6434","amount":"10000"},测试通过
+2019-04-30 16:22:13,096-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的状态是投标中，用户投资金额是100的倍数，并且等于剩余可投金额
+2019-04-30 16:22:13,098-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的状态是已结束，用户投资金额是100的倍数
+2019-04-30 16:22:13,098-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'memberId': '2738', 'amount': '100000000', 'loanId': '6434'}
+2019-04-30 16:22:13,229-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的状态是已结束，用户投资金额是100的倍数,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6434","amount":"100000000"},测试通过
+2019-04-30 16:22:13,230-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的状态是已结束，用户投资金额是100的倍数
+2019-04-30 16:22:13,232-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的不存在，用户输入投资金额
+2019-04-30 16:22:13,232-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'memberId': '2738', 'amount': '100000000', 'loanId': '13999'}
+2019-04-30 16:22:13,375-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的不存在，用户输入投资金额,请求的数据:{"memberId":"2738","password":"12345678","loanId":"13999","amount":"100000000"},测试通过
+2019-04-30 16:22:13,375-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的不存在，用户输入投资金额
+2019-04-30 16:22:13,375-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：不输入用户ID，输入密码，标id，投资金额
+2019-04-30 16:22:13,377-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'memberId': '', 'amount': '100000000', 'loanId': '6434'}
+2019-04-30 16:22:13,517-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:不输入用户ID，输入密码，标id，投资金额,请求的数据:{"memberId":"","password":"12345678","loanId":"6434","amount":"100000000"},测试通过
+2019-04-30 16:22:13,517-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：不输入用户ID，输入密码，标id，投资金额
+2019-04-30 16:22:13,517-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：输入用户ID，标id,投资金额，不输入密码
+2019-04-30 16:22:13,519-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'memberId': '2738', 'amount': '600'}
+2019-04-30 16:22:13,648-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:输入用户ID，标id,投资金额，不输入密码,请求的数据:{"memberId":"2738","password":"12345678","amount":"600"},测试通过
+2019-04-30 16:22:13,648-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：输入用户ID，标id,投资金额，不输入密码
+2019-04-30 16:22:13,650-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：输入用户ID,密码，投资金额，不输入标id
+2019-04-30 16:22:13,650-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'memberId': '2738', 'amount': '600'}
+2019-04-30 16:22:13,808-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:输入用户ID,密码，投资金额，不输入标id,请求的数据:{"memberId":"2738","password":"12345678","amount":"600"},测试通过
+2019-04-30 16:22:13,809-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：输入用户ID,密码，投资金额，不输入标id
+2019-04-30 16:22:13,809-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：输入用户ID,密码，标id，不输入投资金额
+2019-04-30 16:22:13,809-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'memberId': '2738', 'loanId': '6434'}
+2019-04-30 16:22:13,980-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:输入用户ID,密码，标id，不输入投资金额,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6434"},测试通过
+2019-04-30 16:22:13,980-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：输入用户ID,密码，标id，不输入投资金额
+2019-04-30 16:22:13,980-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：输入不存在的用户ID,密码、标id，投资金额
+2019-04-30 16:22:13,980-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'memberId': 132600322, 'amount': '600', 'loanId': '6434'}
+2019-04-30 16:22:14,154-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:输入不存在的用户ID,密码、标id，投资金额,请求的数据:{"memberId":132600322,"password":"12345678","loanId":"6434","amount":"600"},测试通过
+2019-04-30 16:22:14,154-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：输入不存在的用户ID,密码、标id，投资金额
+2019-04-30 16:22:14,157-INFO-do_log.py-[line:28]-login-日志信息：准备测试前置
+2019-04-30 16:22:14,157-INFO-do_log.py-[line:28]-login-日志信息：开始执行测试：登录-输入已注册过的手机号，与之对应的密码
+2019-04-30 16:22:14,157-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '12345678', 'mobilephone': '13660000111'}
+2019-04-30 16:22:14,301-DEBUG-do_log.py-[line:25]-login-日志信息：输出debug级别日志
+2019-04-30 16:22:14,301-INFO-do_log.py-[line:28]-login-日志信息：输出info级别日志
+2019-04-30 16:22:14,301-WARNING-do_log.py-[line:31]-login-日志信息：输出warning级别日志
+2019-04-30 16:22:14,384-INFO-do_log.py-[line:28]-login-日志信息：结束测试：登录-输入已注册过的手机号，与之对应的密码
+2019-04-30 16:22:14,384-INFO-do_log.py-[line:28]-login-日志信息：开始执行测试：登录-输入没有注册过的手机号，密码输入123456
+2019-04-30 16:22:14,384-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '123456', 'mobilephone': '13260030000'}
+2019-04-30 16:22:14,443-DEBUG-do_log.py-[line:25]-login-日志信息：输出debug级别日志
+2019-04-30 16:22:14,443-INFO-do_log.py-[line:28]-login-日志信息：输出info级别日志
+2019-04-30 16:22:14,443-WARNING-do_log.py-[line:31]-login-日志信息：输出warning级别日志
+2019-04-30 16:22:14,519-INFO-do_log.py-[line:28]-login-日志信息：结束测试：登录-输入没有注册过的手机号，密码输入123456
+2019-04-30 16:22:14,519-INFO-do_log.py-[line:28]-login-日志信息：开始执行测试：登录-输入已注册过的手机号，不输入密码
+2019-04-30 16:22:14,519-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '', 'mobilephone': '13660000111'}
+2019-04-30 16:22:14,569-DEBUG-do_log.py-[line:25]-login-日志信息：输出debug级别日志
+2019-04-30 16:22:14,569-INFO-do_log.py-[line:28]-login-日志信息：输出info级别日志
+2019-04-30 16:22:14,569-WARNING-do_log.py-[line:31]-login-日志信息：输出warning级别日志
+2019-04-30 16:22:14,651-INFO-do_log.py-[line:28]-login-日志信息：结束测试：登录-输入已注册过的手机号，不输入密码
+2019-04-30 16:22:14,653-INFO-do_log.py-[line:28]-login-日志信息：开始执行测试：登录-手机号和密码都为空
+2019-04-30 16:22:14,653-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '', 'mobilephone': ''}
+2019-04-30 16:22:14,694-DEBUG-do_log.py-[line:25]-login-日志信息：输出debug级别日志
+2019-04-30 16:22:14,694-INFO-do_log.py-[line:28]-login-日志信息：输出info级别日志
+2019-04-30 16:22:14,694-WARNING-do_log.py-[line:31]-login-日志信息：输出warning级别日志
+2019-04-30 16:22:14,785-INFO-do_log.py-[line:28]-login-日志信息：结束测试：登录-手机号和密码都为空
+2019-04-30 16:22:14,786-INFO-do_log.py-[line:28]-recharge-日志信息：准备测试前置
+2019-04-30 16:22:14,951-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：不登录，直接充值
+2019-04-30 16:22:15,032-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '100'}
+2019-04-30 16:22:15,250-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：不登录，直接充值
+2019-04-30 16:22:15,252-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：正常登录
+2019-04-30 16:22:15,331-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '12345678', 'mobilephone': '13660000111'}
+2019-04-30 16:22:15,464-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：正常登录
+2019-04-30 16:22:15,464-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：正常充值
+2019-04-30 16:22:15,545-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '100'}
+2019-04-30 16:22:15,808-DEBUG-do_log.py-[line:25]-recharge-日志信息：case:正常充值,请求的数据:{"mobilephone":"13660000111","amount":"100"},测试通过
+2019-04-30 16:22:15,808-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：正常充值
+2019-04-30 16:22:15,808-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：只输入手机号，不输入充值金额
+2019-04-30 16:22:15,888-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': ''}
+2019-04-30 16:22:16,003-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：只输入手机号，不输入充值金额
+2019-04-30 16:22:16,003-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值金额为0
+2019-04-30 16:22:16,085-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '0'}
+2019-04-30 16:22:16,298-DEBUG-do_log.py-[line:25]-recharge-日志信息：case:输入已注册过的手机号，充值金额为0,请求的数据:{"mobilephone":"13660000111","amount":"0"},测试通过
+2019-04-30 16:22:16,298-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值金额为0
+2019-04-30 16:22:16,298-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值金额为500000
+2019-04-30 16:22:16,380-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '500000'}
+2019-04-30 16:22:16,609-DEBUG-do_log.py-[line:25]-recharge-日志信息：case:输入已注册过的手机号，充值金额为500000,请求的数据:{"mobilephone":"13660000111","amount":"500000"},测试通过
+2019-04-30 16:22:16,609-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值金额为500000
+2019-04-30 16:22:16,609-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值金额为500001
+2019-04-30 16:22:16,690-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '500001'}
+2019-04-30 16:22:16,809-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值金额为500001
+2019-04-30 16:22:16,809-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值金额为负数
+2019-04-30 16:22:16,907-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '-100'}
+2019-04-30 16:22:17,068-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值金额为负数
+2019-04-30 16:22:17,068-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值金额为汉字
+2019-04-30 16:22:17,157-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '壹佰元'}
+2019-04-30 16:22:17,319-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值金额为汉字
+2019-04-30 16:22:17,319-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值含有1位小数
+2019-04-30 16:22:17,400-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '100.5'}
+2019-04-30 16:22:17,684-DEBUG-do_log.py-[line:25]-recharge-日志信息：case:输入已注册过的手机号，充值含有1位小数,请求的数据:{"mobilephone":"13660000111","amount":"100.5"},测试通过
+2019-04-30 16:22:17,684-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值含有1位小数
+2019-04-30 16:22:17,686-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值金额含有2位小数
+2019-04-30 16:22:17,767-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '100.26'}
+2019-04-30 16:22:18,078-ERROR-do_log.py-[line:34]-recharge-日志信息：case:输入已注册过的手机号，充值金额含有2位小数,请求的数据:{"mobilephone":"13660000111","amount":"100.26"},测试报错：2401804.5599999996 != 2401804.56
+2019-04-30 16:22:18,079-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值金额含有3位小数
+2019-04-30 16:22:18,161-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '100.265'}
+2019-04-30 16:22:18,311-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值金额含有3位小数
+2019-04-30 16:22:18,311-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入没有注册过的手机号，充值金额正常
+2019-04-30 16:22:18,392-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13366660000', 'amount': '110'}
+2019-04-30 16:22:18,530-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入没有注册过的手机号，充值金额正常
+2019-04-30 16:22:18,532-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入10位手机号，充值金额正常
+2019-04-30 16:22:18,611-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '1326003295', 'amount': '110'}
+2019-04-30 16:22:18,757-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入10位手机号，充值金额正常
+2019-04-30 16:22:18,759-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:22:19,023-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-填写未注册过的正常手机号，密码输入8位、注册名全都正确填写
+2019-04-30 16:22:19,487-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'regname': '小小', 'pwd': '12345678', 'mobilephone': '18999994427'}
+2019-04-30 16:22:19,700-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-填写未注册过的正常手机号，密码输入8位、注册名全都正确填写
+2019-04-30 16:22:19,701-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:22:19,938-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-填写未注册过的手机号、密码、不填注册名
+2019-04-30 16:22:20,305-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'regname': '', 'pwd': '12345678', 'mobilephone': '18999991306'}
+2019-04-30 16:22:20,486-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-填写未注册过的手机号、密码、不填注册名
+2019-04-30 16:22:20,487-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:22:20,642-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-使用已经注册过的手机号注册，密码、注册名正确填写
+2019-04-30 16:22:20,642-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'regname': '', 'pwd': '123456', 'mobilephone': '13517315120'}
+2019-04-30 16:22:20,808-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-使用已经注册过的手机号注册，密码、注册名正确填写
+2019-04-30 16:22:20,809-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:22:20,986-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-手机号、密码、注册名全为空
+2019-04-30 16:22:20,986-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'regname': '', 'pwd': '', 'mobilephone': ''}
+2019-04-30 16:22:21,154-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-手机号、密码、注册名全为空
+2019-04-30 16:22:21,155-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:22:21,318-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-填写手机号、不填写密码、注册名
+2019-04-30 16:22:21,319-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'regname': '', 'pwd': '', 'mobilephone': '13260032951'}
+2019-04-30 16:22:21,490-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-填写手机号、不填写密码、注册名
+2019-04-30 16:22:21,490-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:22:21,658-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-不填手机号、填写密码、注册名
+2019-04-30 16:22:21,660-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'regname': 'apple', 'pwd': '123456', 'mobilephone': ''}
+2019-04-30 16:22:21,825-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-不填手机号、填写密码、注册名
+2019-04-30 16:22:21,825-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:22:21,983-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-手机号填写10位，密码、注册名正确填写
+2019-04-30 16:22:21,983-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'regname': '小小', 'pwd': '123456', 'mobilephone': '1326003000'}
+2019-04-30 16:22:22,147-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-手机号填写10位，密码、注册名正确填写
+2019-04-30 16:22:22,148-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:22:22,316-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-手机号填写12位，密码、注册名正确填写
+2019-04-30 16:22:22,318-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'regname': '小小o', 'pwd': '123456', 'mobilephone': '132600300000'}
+2019-04-30 16:22:22,487-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-手机号填写12位，密码、注册名正确填写
+2019-04-30 16:22:22,489-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:22:22,651-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-手机号输入11位数字和特殊字符的组合
+2019-04-30 16:22:22,651-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'regname': '小小', 'pwd': '123456', 'mobilephone': '132600ab000'}
+2019-04-30 16:22:22,836-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-手机号输入11位数字和特殊字符的组合
+2019-04-30 16:22:22,838-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:22:22,997-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-填写正常手机号，密码输入18位
+2019-04-30 16:22:23,313-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'regname': '小小', 'pwd': 'abc_12345678901234', 'mobilephone': '18999990512'}
+2019-04-30 16:22:23,493-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-填写正常手机号，密码输入18位
+2019-04-30 16:22:23,494-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:22:23,657-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-填写正常手机号，密码输入19位
+2019-04-30 16:22:23,657-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'regname': '小小', 'pwd': 'abc_123456789012345', 'mobilephone': 'register_mobile'}
+2019-04-30 16:22:23,819-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-填写正常手机号，密码输入19位
+2019-04-30 16:22:23,819-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:22:23,989-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-填写正常手机号，密码输入6位
+2019-04-30 16:22:24,331-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'regname': '小小', 'pwd': '123456', 'mobilephone': '18999993540'}
+2019-04-30 16:22:24,520-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-填写正常手机号，密码输入6位
+2019-04-30 16:22:24,522-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:22:24,683-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-填写正常手机号，密码输入5位
+2019-04-30 16:22:24,683-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'regname': '小小', 'pwd': '12345', 'mobilephone': 'register_mobile'}
+2019-04-30 16:22:24,849-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-填写正常手机号，密码输入5位
+2019-04-30 16:25:38,961-INFO-do_log.py-[line:28]-add-日志信息：准备测试前置
+2019-04-30 16:25:39,131-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：不登录直接加标
+2019-04-30 16:25:39,132-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanDateType': '0', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'biddingDays': '6', 'amount': '600', 'memberId': '1030', 'loanTerm': '6', 'loanRate': '18.0'}
+2019-04-30 16:25:39,332-INFO-do_log.py-[line:28]-add-日志信息：结束测试：不登录直接加标
+2019-04-30 16:25:39,332-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：正常登录
+2019-04-30 16:25:39,332-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '12345678', 'mobilephone': '13660000111'}
+2019-04-30 16:25:39,444-INFO-do_log.py-[line:28]-add-日志信息：结束测试：正常登录
+2019-04-30 16:25:39,444-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：新增一个项目，借款人id在member表中已存在
+2019-04-30 16:25:39,444-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanDateType': '0', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'biddingDays': '6', 'amount': '600', 'memberId': '1030', 'loanTerm': '6', 'loanRate': '18.0'}
+2019-04-30 16:25:39,582-INFO-do_log.py-[line:28]-add-日志信息：结束测试：新增一个项目，借款人id在member表中已存在
+2019-04-30 16:25:39,582-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：新增一个项目，借款人id在member表中不存在
+2019-04-30 16:25:39,582-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanDateType': '0', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'biddingDays': '6', 'amount': '600', 'memberId': '2542254', 'loanTerm': '6', 'loanRate': '18.0'}
+2019-04-30 16:25:39,709-INFO-do_log.py-[line:28]-add-日志信息：结束测试：新增一个项目，借款人id在member表中不存在
+2019-04-30 16:25:39,709-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：新增一个项目，借款人id存在，不输入借款标题
+2019-04-30 16:25:39,710-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanDateType': '0', 'repaymemtWay': '4', 'title': '', 'biddingDays': '6', 'amount': '600', 'memberId': '1030', 'loanTerm': '6', 'loanRate': '18.0'}
+2019-04-30 16:25:39,835-INFO-do_log.py-[line:28]-add-日志信息：结束测试：新增一个项目，借款人id存在，不输入借款标题
+2019-04-30 16:25:39,835-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：不填写借款金额
+2019-04-30 16:25:39,836-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanDateType': '0', 'repaymemtWay': '4', 'title': '', 'biddingDays': '6', 'amount': '', 'memberId': '1030', 'loanTerm': '6', 'loanRate': '18.0'}
+2019-04-30 16:25:39,967-INFO-do_log.py-[line:28]-add-日志信息：结束测试：不填写借款金额
+2019-04-30 16:25:39,967-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：不填写年利率
+2019-04-30 16:25:39,967-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanDateType': '0', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'biddingDays': '6', 'amount': '600', 'memberId': '1030', 'loanTerm': '6', 'loanRate': ''}
+2019-04-30 16:25:40,107-INFO-do_log.py-[line:28]-add-日志信息：结束测试：不填写年利率
+2019-04-30 16:25:40,108-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：不填写借款期限
+2019-04-30 16:25:40,108-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanDateType': '0', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'biddingDays': '6', 'amount': '600', 'memberId': '1030', 'loanTerm': '', 'loanRate': '18.0'}
+2019-04-30 16:25:40,232-INFO-do_log.py-[line:28]-add-日志信息：结束测试：不填写借款期限
+2019-04-30 16:25:40,233-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：不填写借款期限类型
+2019-04-30 16:25:40,233-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanDateType': '0', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'biddingDays': '6', 'amount': '600', 'memberId': '1030', 'loanTerm': '6', 'loanRate': '18.0'}
+2019-04-30 16:25:40,351-ERROR-do_log.py-[line:34]-add-日志信息：case:不填写借款期限类型,请求的数据:{"memberId":"1030","title":"测试加标，借款二十万","loanRate":"18.0","amount":"600","loanTerm":"6","loanDateType":"0","repaymemtWay":"4","biddingDays":"6"},测试报错：'{"status":0,"code":"20103","data":null,"msg":"所有参数不能为空"}' != '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'
+- {"status":0,"code":"20103","data":null,"msg":"所有参数不能为空"}
+?           ^         ^  --                     ^^^^^^^^
++ {"status":1,"code":"10001","data":null,"msg":"加标成功"}
+?           ^         ^^^                       ^^^^
+
+2019-04-30 16:25:40,354-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：不填写还款方式
+2019-04-30 16:25:40,354-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanDateType': '0', 'repaymemtWay': '', 'title': '测试加标，借款二十万', 'biddingDays': '6', 'amount': '600', 'memberId': '1030', 'loanTerm': '6', 'loanRate': '18.0'}
+2019-04-30 16:25:40,469-INFO-do_log.py-[line:28]-add-日志信息：结束测试：不填写还款方式
+2019-04-30 16:25:40,469-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：不填写竞标天数
+2019-04-30 16:25:40,469-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanDateType': '0', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'biddingDays': '', 'amount': '600', 'memberId': '1030', 'loanTerm': '6', 'loanRate': '18.0'}
+2019-04-30 16:25:40,588-INFO-do_log.py-[line:28]-add-日志信息：结束测试：不填写竞标天数
+2019-04-30 16:25:40,588-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：竞标天数写0天
+2019-04-30 16:25:40,589-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanDateType': '0', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'biddingDays': '0', 'amount': '600', 'memberId': '1030', 'loanTerm': '6', 'loanRate': '18.0'}
+2019-04-30 16:25:40,711-ERROR-do_log.py-[line:34]-add-日志信息：case:竞标天数写0天,请求的数据:{"memberId":"1030","title":"测试加标，借款二十万","loanRate":"18.0","amount":"600","loanTerm":"6","loanDateType":"0","repaymemtWay":"4","biddingDays":"0"},测试报错：'{"status":0,"code":"20103","data":null,"msg":"竞标天数应为1-10"}' != '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'
+- {"status":0,"code":"20103","data":null,"msg":"竞标天数应为1-10"}
+?           ^         ^  --                     ^ ^^^^^^^^
++ {"status":1,"code":"10001","data":null,"msg":"加标成功"}
+?           ^         ^^^                       ^ ^^
+
+2019-04-30 16:25:40,713-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：竞标天数写1天
+2019-04-30 16:25:40,713-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanDateType': '0', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'biddingDays': '10', 'amount': '600', 'memberId': '1030', 'loanTerm': '6', 'loanRate': '18.0'}
+2019-04-30 16:25:40,875-INFO-do_log.py-[line:28]-add-日志信息：结束测试：竞标天数写1天
+2019-04-30 16:25:40,877-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：竞标天数写10天
+2019-04-30 16:25:40,877-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanDateType': '0', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'biddingDays': '10', 'amount': '600', 'memberId': '1030', 'loanTerm': '6', 'loanRate': '18.0'}
+2019-04-30 16:25:40,996-INFO-do_log.py-[line:28]-add-日志信息：结束测试：竞标天数写10天
+2019-04-30 16:25:40,996-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：竞标天数写11天
+2019-04-30 16:25:40,996-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanDateType': '0', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'biddingDays': '11', 'amount': '600', 'memberId': '1030', 'loanTerm': '6', 'loanRate': '18.0'}
+2019-04-30 16:25:41,115-ERROR-do_log.py-[line:34]-add-日志信息：case:竞标天数写11天,请求的数据:{"memberId":"1030","title":"测试加标，借款二十万","loanRate":"18.0","amount":"600","loanTerm":"6","loanDateType":"0","repaymemtWay":"4","biddingDays":"11"},测试报错：'{"status":0,"code":"20103","data":null,"msg":"竞标天数应为1-10"}' != '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'
+- {"status":0,"code":"20103","data":null,"msg":"竞标天数应为1-10"}
+?           ^         ^  --                     ^ ^^^^^^^^
++ {"status":1,"code":"10001","data":null,"msg":"加标成功"}
+?           ^         ^^^                       ^ ^^
+
+2019-04-30 16:25:41,117-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：借款类型输入除0，2，4之外的其他数字
+2019-04-30 16:25:41,117-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanDateType': '3', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'biddingDays': '11', 'amount': '600', 'memberId': '1030', 'loanTerm': '6', 'loanRate': '18.0'}
+2019-04-30 16:25:41,229-INFO-do_log.py-[line:28]-add-日志信息：结束测试：借款类型输入除0，2，4之外的其他数字
+2019-04-30 16:25:41,229-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：年化率大于24%
+2019-04-30 16:25:41,230-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanDateType': '3', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'biddingDays': '11', 'amount': '600', 'memberId': '1030', 'loanTerm': '6', 'loanRate': '25.0'}
+2019-04-30 16:25:41,342-INFO-do_log.py-[line:28]-add-日志信息：结束测试：年化率大于24%
+2019-04-30 16:25:41,342-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：年化率等于0
+2019-04-30 16:25:41,342-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanDateType': '3', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'biddingDays': '11', 'amount': '600', 'memberId': '1030', 'loanTerm': '6', 'loanRate': '0'}
+2019-04-30 16:25:41,453-INFO-do_log.py-[line:28]-add-日志信息：结束测试：年化率等于0
+2019-04-30 16:25:41,453-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：年化率小于0
+2019-04-30 16:25:41,453-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanDateType': '3', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'biddingDays': '11', 'amount': '600', 'memberId': '1030', 'loanTerm': '6', 'loanRate': '-18.0'}
+2019-04-30 16:25:41,562-INFO-do_log.py-[line:28]-add-日志信息：结束测试：年化率小于0
+2019-04-30 16:25:41,563-INFO-do_log.py-[line:28]-bidLoan-日志信息：准备测试前置
+2019-04-30 16:25:41,730-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：不登录，直接投标
+2019-04-30 16:25:41,732-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'amount': '100', 'mobilephone': '13660000111'}
+2019-04-30 16:25:41,924-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:不登录，直接投标,请求的数据:{"mobilephone":"13660000111","amount":"100"},测试通过
+2019-04-30 16:25:41,924-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：不登录，直接投标
+2019-04-30 16:25:41,924-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：正常登录
+2019-04-30 16:25:41,926-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '12345678', 'mobilephone': '13660000111'}
+2019-04-30 16:25:42,122-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:正常登录,请求的数据:{"mobilephone":"13660000111","pwd":"12345678"},测试通过
+2019-04-30 16:25:42,122-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：正常登录
+2019-04-30 16:25:42,122-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：新增一个项目，借款人id在member表中已存在
+2019-04-30 16:25:42,122-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanDateType': '0', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'biddingDays': '6', 'amount': '200000', 'memberId': '2738', 'loanTerm': '6', 'loanRate': '18.0'}
+2019-04-30 16:25:42,332-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:新增一个项目，借款人id在member表中已存在,请求的数据:{"memberId":"2738","title":"测试加标，借款二十万","loanRate":"18.0","amount":"200000","loanTerm":"6","loanDateType":"0","repaymemtWay":"4","biddingDays":"6"},测试通过
+2019-04-30 16:25:42,332-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：新增一个项目，借款人id在member表中已存在
+2019-04-30 16:25:42,332-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的是未开始状态，用户投资金额是100的倍数，并且小于剩余可投金额
+2019-04-30 16:25:42,332-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'amount': '100000000', 'memberId': '2738', 'loanId': '6441'}
+2019-04-30 16:25:42,446-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的是未开始状态，用户投资金额是100的倍数，并且小于剩余可投金额,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6441","amount":"100000000"},测试通过
+2019-04-30 16:25:42,446-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的是未开始状态，用户投资金额是100的倍数，并且小于剩余可投金额
+2019-04-30 16:25:42,446-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：审核新增加的标
+2019-04-30 16:25:42,447-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'id': '6441', 'status': 4}
+2019-04-30 16:25:42,569-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:审核新增加的标,请求的数据:{"id":"6441","status":4},测试通过
+2019-04-30 16:25:42,569-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：审核新增加的标
+2019-04-30 16:25:42,569-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的状态是投标中，用户投资金额是100的倍数，并且小于剩余可投金额
+2019-04-30 16:25:42,571-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'amount': '190000', 'memberId': '2738', 'loanId': '6441'}
+2019-04-30 16:25:42,711-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的状态是投标中，用户投资金额是100的倍数，并且小于剩余可投金额,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6441","amount":"190000"},测试通过
+2019-04-30 16:25:42,805-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的状态是投标中，用户投资金额是100的倍数，并且小于剩余可投金额
+2019-04-30 16:25:42,805-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的状态是投标中，用户投资金额是100的倍数，并且大于剩余可投金额
+2019-04-30 16:25:42,805-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'amount': '30000', 'memberId': '2738', 'loanId': '6441'}
+2019-04-30 16:25:42,947-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的状态是投标中，用户投资金额是100的倍数，并且大于剩余可投金额,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6441","amount":"30000"},测试通过
+2019-04-30 16:25:42,947-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的状态是投标中，用户投资金额是100的倍数，并且大于剩余可投金额
+2019-04-30 16:25:42,947-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的状态是投标中，用户投资金额是0
+2019-04-30 16:25:42,948-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'amount': '0', 'memberId': '2738', 'loanId': '6441'}
+2019-04-30 16:25:43,065-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的状态是投标中，用户投资金额是0,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6441","amount":"0"},测试通过
+2019-04-30 16:25:43,065-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的状态是投标中，用户投资金额是0
+2019-04-30 16:25:43,065-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的状态是投标中，用户投资金额不是100的倍数，并且小于剩余可投金额
+2019-04-30 16:25:43,066-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'amount': '699', 'memberId': '2738', 'loanId': '6441'}
+2019-04-30 16:25:43,181-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的状态是投标中，用户投资金额不是100的倍数，并且小于剩余可投金额,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6441","amount":"699"},测试通过
+2019-04-30 16:25:43,181-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的状态是投标中，用户投资金额不是100的倍数，并且小于剩余可投金额
+2019-04-30 16:25:43,183-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的状态是投标中，用户投资金额是100的倍数，并且等于剩余可投金额
+2019-04-30 16:25:43,183-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'amount': '10000', 'memberId': '2738', 'loanId': '6441'}
+2019-04-30 16:25:43,341-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的状态是投标中，用户投资金额是100的倍数，并且等于剩余可投金额,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6441","amount":"10000"},测试通过
+2019-04-30 16:25:43,434-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的状态是投标中，用户投资金额是100的倍数，并且等于剩余可投金额
+2019-04-30 16:25:43,434-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的状态是已结束，用户投资金额是100的倍数
+2019-04-30 16:25:43,434-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'amount': '100000000', 'memberId': '2738', 'loanId': '6441'}
+2019-04-30 16:25:43,552-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的状态是已结束，用户投资金额是100的倍数,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6441","amount":"100000000"},测试通过
+2019-04-30 16:25:43,552-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的状态是已结束，用户投资金额是100的倍数
+2019-04-30 16:25:43,552-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的不存在，用户输入投资金额
+2019-04-30 16:25:43,552-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'amount': '100000000', 'memberId': '2738', 'loanId': '13999'}
+2019-04-30 16:25:43,673-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的不存在，用户输入投资金额,请求的数据:{"memberId":"2738","password":"12345678","loanId":"13999","amount":"100000000"},测试通过
+2019-04-30 16:25:43,673-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的不存在，用户输入投资金额
+2019-04-30 16:25:43,673-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：不输入用户ID，输入密码，标id，投资金额
+2019-04-30 16:25:43,673-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'amount': '100000000', 'memberId': '', 'loanId': '6441'}
+2019-04-30 16:25:43,798-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:不输入用户ID，输入密码，标id，投资金额,请求的数据:{"memberId":"","password":"12345678","loanId":"6441","amount":"100000000"},测试通过
+2019-04-30 16:25:43,799-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：不输入用户ID，输入密码，标id，投资金额
+2019-04-30 16:25:43,799-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：输入用户ID，标id,投资金额，不输入密码
+2019-04-30 16:25:43,799-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'memberId': '2738', 'amount': '600'}
+2019-04-30 16:25:43,926-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:输入用户ID，标id,投资金额，不输入密码,请求的数据:{"memberId":"2738","password":"12345678","amount":"600"},测试通过
+2019-04-30 16:25:43,926-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：输入用户ID，标id,投资金额，不输入密码
+2019-04-30 16:25:43,927-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：输入用户ID,密码，投资金额，不输入标id
+2019-04-30 16:25:43,927-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'memberId': '2738', 'amount': '600'}
+2019-04-30 16:25:44,042-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:输入用户ID,密码，投资金额，不输入标id,请求的数据:{"memberId":"2738","password":"12345678","amount":"600"},测试通过
+2019-04-30 16:25:44,042-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：输入用户ID,密码，投资金额，不输入标id
+2019-04-30 16:25:44,042-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：输入用户ID,密码，标id，不输入投资金额
+2019-04-30 16:25:44,043-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'memberId': '2738', 'loanId': '6441'}
+2019-04-30 16:25:44,165-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:输入用户ID,密码，标id，不输入投资金额,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6441"},测试通过
+2019-04-30 16:25:44,167-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：输入用户ID,密码，标id，不输入投资金额
+2019-04-30 16:25:44,167-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：输入不存在的用户ID,密码、标id，投资金额
+2019-04-30 16:25:44,167-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'amount': '600', 'memberId': 132600322, 'loanId': '6441'}
+2019-04-30 16:25:44,276-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:输入不存在的用户ID,密码、标id，投资金额,请求的数据:{"memberId":132600322,"password":"12345678","loanId":"6441","amount":"600"},测试通过
+2019-04-30 16:25:44,276-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：输入不存在的用户ID,密码、标id，投资金额
+2019-04-30 16:25:44,278-INFO-do_log.py-[line:28]-login-日志信息：准备测试前置
+2019-04-30 16:25:44,278-INFO-do_log.py-[line:28]-login-日志信息：开始执行测试：登录-输入已注册过的手机号，与之对应的密码
+2019-04-30 16:25:44,278-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '12345678', 'mobilephone': '13660000111'}
+2019-04-30 16:25:44,365-DEBUG-do_log.py-[line:25]-login-日志信息：输出debug级别日志
+2019-04-30 16:25:44,365-INFO-do_log.py-[line:28]-login-日志信息：输出info级别日志
+2019-04-30 16:25:44,365-WARNING-do_log.py-[line:31]-login-日志信息：输出warning级别日志
+2019-04-30 16:25:44,440-INFO-do_log.py-[line:28]-login-日志信息：结束测试：登录-输入已注册过的手机号，与之对应的密码
+2019-04-30 16:25:44,440-INFO-do_log.py-[line:28]-login-日志信息：开始执行测试：登录-输入没有注册过的手机号，密码输入123456
+2019-04-30 16:25:44,440-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '123456', 'mobilephone': '13260030000'}
+2019-04-30 16:25:44,484-DEBUG-do_log.py-[line:25]-login-日志信息：输出debug级别日志
+2019-04-30 16:25:44,484-INFO-do_log.py-[line:28]-login-日志信息：输出info级别日志
+2019-04-30 16:25:44,484-WARNING-do_log.py-[line:31]-login-日志信息：输出warning级别日志
+2019-04-30 16:25:44,553-INFO-do_log.py-[line:28]-login-日志信息：结束测试：登录-输入没有注册过的手机号，密码输入123456
+2019-04-30 16:25:44,555-INFO-do_log.py-[line:28]-login-日志信息：开始执行测试：登录-输入已注册过的手机号，不输入密码
+2019-04-30 16:25:44,555-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '', 'mobilephone': '13660000111'}
+2019-04-30 16:25:44,605-DEBUG-do_log.py-[line:25]-login-日志信息：输出debug级别日志
+2019-04-30 16:25:44,605-INFO-do_log.py-[line:28]-login-日志信息：输出info级别日志
+2019-04-30 16:25:44,605-WARNING-do_log.py-[line:31]-login-日志信息：输出warning级别日志
+2019-04-30 16:25:44,680-INFO-do_log.py-[line:28]-login-日志信息：结束测试：登录-输入已注册过的手机号，不输入密码
+2019-04-30 16:25:44,680-INFO-do_log.py-[line:28]-login-日志信息：开始执行测试：登录-手机号和密码都为空
+2019-04-30 16:25:44,680-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '', 'mobilephone': ''}
+2019-04-30 16:25:44,723-DEBUG-do_log.py-[line:25]-login-日志信息：输出debug级别日志
+2019-04-30 16:25:44,724-INFO-do_log.py-[line:28]-login-日志信息：输出info级别日志
+2019-04-30 16:25:44,724-WARNING-do_log.py-[line:31]-login-日志信息：输出warning级别日志
+2019-04-30 16:25:44,790-INFO-do_log.py-[line:28]-login-日志信息：结束测试：登录-手机号和密码都为空
+2019-04-30 16:25:44,792-INFO-do_log.py-[line:28]-recharge-日志信息：准备测试前置
+2019-04-30 16:25:44,956-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：不登录，直接充值
+2019-04-30 16:25:45,035-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'amount': '100', 'mobilephone': '13660000111'}
+2019-04-30 16:25:45,237-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：不登录，直接充值
+2019-04-30 16:25:45,237-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：正常登录
+2019-04-30 16:25:45,323-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '12345678', 'mobilephone': '13660000111'}
+2019-04-30 16:25:45,443-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：正常登录
+2019-04-30 16:25:45,444-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：正常充值
+2019-04-30 16:25:45,533-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'amount': '100', 'mobilephone': '13660000111'}
+2019-04-30 16:25:45,753-DEBUG-do_log.py-[line:25]-recharge-日志信息：case:正常充值,请求的数据:{"mobilephone":"13660000111","amount":"100"},测试通过
+2019-04-30 16:25:45,753-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：正常充值
+2019-04-30 16:25:45,753-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：只输入手机号，不输入充值金额
+2019-04-30 16:25:45,834-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'amount': '', 'mobilephone': '13660000111'}
+2019-04-30 16:25:45,944-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：只输入手机号，不输入充值金额
+2019-04-30 16:25:45,944-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值金额为0
+2019-04-30 16:25:46,023-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'amount': '0', 'mobilephone': '13660000111'}
+2019-04-30 16:25:46,220-DEBUG-do_log.py-[line:25]-recharge-日志信息：case:输入已注册过的手机号，充值金额为0,请求的数据:{"mobilephone":"13660000111","amount":"0"},测试通过
+2019-04-30 16:25:46,220-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值金额为0
+2019-04-30 16:25:46,220-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值金额为500000
+2019-04-30 16:25:46,303-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'amount': '500000', 'mobilephone': '13660000111'}
+2019-04-30 16:25:46,522-DEBUG-do_log.py-[line:25]-recharge-日志信息：case:输入已注册过的手机号，充值金额为500000,请求的数据:{"mobilephone":"13660000111","amount":"500000"},测试通过
+2019-04-30 16:25:46,522-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值金额为500000
+2019-04-30 16:25:46,522-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值金额为500001
+2019-04-30 16:25:46,602-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'amount': '500001', 'mobilephone': '13660000111'}
+2019-04-30 16:25:46,720-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值金额为500001
+2019-04-30 16:25:46,720-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值金额为负数
+2019-04-30 16:25:46,799-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'amount': '-100', 'mobilephone': '13660000111'}
+2019-04-30 16:25:46,915-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值金额为负数
+2019-04-30 16:25:46,917-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值金额为汉字
+2019-04-30 16:25:46,996-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'amount': '壹佰元', 'mobilephone': '13660000111'}
+2019-04-30 16:25:47,114-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值金额为汉字
+2019-04-30 16:25:47,115-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值含有1位小数
+2019-04-30 16:25:47,194-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'amount': '100.5', 'mobilephone': '13660000111'}
+2019-04-30 16:25:47,424-DEBUG-do_log.py-[line:25]-recharge-日志信息：case:输入已注册过的手机号，充值含有1位小数,请求的数据:{"mobilephone":"13660000111","amount":"100.5"},测试通过
+2019-04-30 16:25:47,424-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值含有1位小数
+2019-04-30 16:25:47,424-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值金额含有2位小数
+2019-04-30 16:25:47,503-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'amount': '100.26', 'mobilephone': '13660000111'}
+2019-04-30 16:25:47,720-DEBUG-do_log.py-[line:25]-recharge-日志信息：case:输入已注册过的手机号，充值金额含有2位小数,请求的数据:{"mobilephone":"13660000111","amount":"100.26"},测试通过
+2019-04-30 16:25:47,720-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值金额含有2位小数
+2019-04-30 16:25:47,721-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值金额含有3位小数
+2019-04-30 16:25:47,802-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'amount': '100.265', 'mobilephone': '13660000111'}
+2019-04-30 16:25:47,926-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值金额含有3位小数
+2019-04-30 16:25:47,926-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入没有注册过的手机号，充值金额正常
+2019-04-30 16:25:48,005-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'amount': '110', 'mobilephone': '13366660000'}
+2019-04-30 16:25:48,122-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入没有注册过的手机号，充值金额正常
+2019-04-30 16:25:48,122-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入10位手机号，充值金额正常
+2019-04-30 16:25:48,203-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'amount': '110', 'mobilephone': '1326003295'}
+2019-04-30 16:25:48,313-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入10位手机号，充值金额正常
+2019-04-30 16:25:48,315-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:25:48,476-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-填写未注册过的正常手机号，密码输入8位、注册名全都正确填写
+2019-04-30 16:25:48,808-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '12345678', 'regname': '小小', 'mobilephone': '18999990340'}
+2019-04-30 16:25:48,990-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-填写未注册过的正常手机号，密码输入8位、注册名全都正确填写
+2019-04-30 16:25:48,992-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:25:49,168-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-填写未注册过的手机号、密码、不填注册名
+2019-04-30 16:25:49,490-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '12345678', 'regname': '', 'mobilephone': '18999998028'}
+2019-04-30 16:25:49,654-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-填写未注册过的手机号、密码、不填注册名
+2019-04-30 16:25:49,654-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:25:49,834-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-使用已经注册过的手机号注册，密码、注册名正确填写
+2019-04-30 16:25:49,834-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '123456', 'regname': '', 'mobilephone': '13517315120'}
+2019-04-30 16:25:50,019-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-使用已经注册过的手机号注册，密码、注册名正确填写
+2019-04-30 16:25:50,019-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:25:50,176-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-手机号、密码、注册名全为空
+2019-04-30 16:25:50,176-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '', 'regname': '', 'mobilephone': ''}
+2019-04-30 16:25:50,338-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-手机号、密码、注册名全为空
+2019-04-30 16:25:50,339-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:25:50,500-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-填写手机号、不填写密码、注册名
+2019-04-30 16:25:50,500-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '', 'regname': '', 'mobilephone': '13260032951'}
+2019-04-30 16:25:50,655-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-填写手机号、不填写密码、注册名
+2019-04-30 16:25:50,657-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:25:50,832-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-不填手机号、填写密码、注册名
+2019-04-30 16:25:50,832-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '123456', 'regname': 'apple', 'mobilephone': ''}
+2019-04-30 16:25:50,990-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-不填手机号、填写密码、注册名
+2019-04-30 16:25:50,990-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:25:51,150-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-手机号填写10位，密码、注册名正确填写
+2019-04-30 16:25:51,151-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '123456', 'regname': '小小', 'mobilephone': '1326003000'}
+2019-04-30 16:25:51,313-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-手机号填写10位，密码、注册名正确填写
+2019-04-30 16:25:51,315-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:25:51,483-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-手机号填写12位，密码、注册名正确填写
+2019-04-30 16:25:51,483-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '123456', 'regname': '小小o', 'mobilephone': '132600300000'}
+2019-04-30 16:25:51,637-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-手机号填写12位，密码、注册名正确填写
+2019-04-30 16:25:51,638-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:25:51,809-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-手机号输入11位数字和特殊字符的组合
+2019-04-30 16:25:51,809-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '123456', 'regname': '小小', 'mobilephone': '132600ab000'}
+2019-04-30 16:25:51,990-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-手机号输入11位数字和特殊字符的组合
+2019-04-30 16:25:51,990-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:25:52,154-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-填写正常手机号，密码输入18位
+2019-04-30 16:25:52,470-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': 'abc_12345678901234', 'regname': '小小', 'mobilephone': '18999998910'}
+2019-04-30 16:25:52,674-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-填写正常手机号，密码输入18位
+2019-04-30 16:25:52,674-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:25:53,184-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-填写正常手机号，密码输入19位
+2019-04-30 16:25:53,184-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': 'abc_123456789012345', 'regname': '小小', 'mobilephone': 'register_mobile'}
+2019-04-30 16:25:53,348-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-填写正常手机号，密码输入19位
+2019-04-30 16:25:53,348-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:25:53,525-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-填写正常手机号，密码输入6位
+2019-04-30 16:25:53,938-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '123456', 'regname': '小小', 'mobilephone': '18999991570'}
+2019-04-30 16:25:54,142-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-填写正常手机号，密码输入6位
+2019-04-30 16:25:54,144-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:25:54,313-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-填写正常手机号，密码输入5位
+2019-04-30 16:25:54,313-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'pwd': '12345', 'regname': '小小', 'mobilephone': 'register_mobile'}
+2019-04-30 16:25:54,470-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-填写正常手机号，密码输入5位
+2019-04-30 16:26:10,380-INFO-do_log.py-[line:28]-add-日志信息：准备测试前置
+2019-04-30 16:26:10,543-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：不登录直接加标
+2019-04-30 16:26:10,543-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanRate': '18.0', 'biddingDays': '6', 'loanDateType': '0', 'memberId': '1030', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'loanTerm': '6', 'amount': '600'}
+2019-04-30 16:26:10,799-INFO-do_log.py-[line:28]-add-日志信息：结束测试：不登录直接加标
+2019-04-30 16:26:10,801-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：正常登录
+2019-04-30 16:26:10,801-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'pwd': '12345678'}
+2019-04-30 16:26:10,980-INFO-do_log.py-[line:28]-add-日志信息：结束测试：正常登录
+2019-04-30 16:26:10,980-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：新增一个项目，借款人id在member表中已存在
+2019-04-30 16:26:10,982-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanRate': '18.0', 'biddingDays': '6', 'loanDateType': '0', 'memberId': '1030', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'loanTerm': '6', 'amount': '600'}
+2019-04-30 16:26:11,111-INFO-do_log.py-[line:28]-add-日志信息：结束测试：新增一个项目，借款人id在member表中已存在
+2019-04-30 16:26:11,111-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：新增一个项目，借款人id在member表中不存在
+2019-04-30 16:26:11,111-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanRate': '18.0', 'biddingDays': '6', 'loanDateType': '0', 'memberId': '2542254', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'loanTerm': '6', 'amount': '600'}
+2019-04-30 16:26:11,226-INFO-do_log.py-[line:28]-add-日志信息：结束测试：新增一个项目，借款人id在member表中不存在
+2019-04-30 16:26:11,226-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：新增一个项目，借款人id存在，不输入借款标题
+2019-04-30 16:26:11,226-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanRate': '18.0', 'biddingDays': '6', 'loanDateType': '0', 'memberId': '1030', 'repaymemtWay': '4', 'title': '', 'loanTerm': '6', 'amount': '600'}
+2019-04-30 16:26:11,349-INFO-do_log.py-[line:28]-add-日志信息：结束测试：新增一个项目，借款人id存在，不输入借款标题
+2019-04-30 16:26:11,349-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：不填写借款金额
+2019-04-30 16:26:11,351-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanRate': '18.0', 'biddingDays': '6', 'loanDateType': '0', 'memberId': '1030', 'repaymemtWay': '4', 'title': '', 'loanTerm': '6', 'amount': ''}
+2019-04-30 16:26:11,467-INFO-do_log.py-[line:28]-add-日志信息：结束测试：不填写借款金额
+2019-04-30 16:26:11,467-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：不填写年利率
+2019-04-30 16:26:11,467-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanRate': '', 'biddingDays': '6', 'loanDateType': '0', 'memberId': '1030', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'loanTerm': '6', 'amount': '600'}
+2019-04-30 16:26:11,582-INFO-do_log.py-[line:28]-add-日志信息：结束测试：不填写年利率
+2019-04-30 16:26:11,582-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：不填写借款期限
+2019-04-30 16:26:11,582-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanRate': '18.0', 'biddingDays': '6', 'loanDateType': '0', 'memberId': '1030', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'loanTerm': '', 'amount': '600'}
+2019-04-30 16:26:11,697-INFO-do_log.py-[line:28]-add-日志信息：结束测试：不填写借款期限
+2019-04-30 16:26:11,697-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：不填写借款期限类型
+2019-04-30 16:26:11,697-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanRate': '18.0', 'biddingDays': '6', 'loanDateType': '0', 'memberId': '1030', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'loanTerm': '6', 'amount': '600'}
+2019-04-30 16:26:11,823-ERROR-do_log.py-[line:34]-add-日志信息：case:不填写借款期限类型,请求的数据:{"memberId":"1030","title":"测试加标，借款二十万","loanRate":"18.0","amount":"600","loanTerm":"6","loanDateType":"0","repaymemtWay":"4","biddingDays":"6"},测试报错：'{"status":0,"code":"20103","data":null,"msg":"所有参数不能为空"}' != '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'
+- {"status":0,"code":"20103","data":null,"msg":"所有参数不能为空"}
+?           ^         ^  --                     ^^^^^^^^
++ {"status":1,"code":"10001","data":null,"msg":"加标成功"}
+?           ^         ^^^                       ^^^^
+
+2019-04-30 16:26:11,825-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：不填写还款方式
+2019-04-30 16:26:11,825-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanRate': '18.0', 'biddingDays': '6', 'loanDateType': '0', 'memberId': '1030', 'repaymemtWay': '', 'title': '测试加标，借款二十万', 'loanTerm': '6', 'amount': '600'}
+2019-04-30 16:26:11,934-INFO-do_log.py-[line:28]-add-日志信息：结束测试：不填写还款方式
+2019-04-30 16:26:11,936-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：不填写竞标天数
+2019-04-30 16:26:11,936-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanRate': '18.0', 'biddingDays': '', 'loanDateType': '0', 'memberId': '1030', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'loanTerm': '6', 'amount': '600'}
+2019-04-30 16:26:12,051-INFO-do_log.py-[line:28]-add-日志信息：结束测试：不填写竞标天数
+2019-04-30 16:26:12,051-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：竞标天数写0天
+2019-04-30 16:26:12,051-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanRate': '18.0', 'biddingDays': '0', 'loanDateType': '0', 'memberId': '1030', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'loanTerm': '6', 'amount': '600'}
+2019-04-30 16:26:12,180-ERROR-do_log.py-[line:34]-add-日志信息：case:竞标天数写0天,请求的数据:{"memberId":"1030","title":"测试加标，借款二十万","loanRate":"18.0","amount":"600","loanTerm":"6","loanDateType":"0","repaymemtWay":"4","biddingDays":"0"},测试报错：'{"status":0,"code":"20103","data":null,"msg":"竞标天数应为1-10"}' != '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'
+- {"status":0,"code":"20103","data":null,"msg":"竞标天数应为1-10"}
+?           ^         ^  --                     ^ ^^^^^^^^
++ {"status":1,"code":"10001","data":null,"msg":"加标成功"}
+?           ^         ^^^                       ^ ^^
+
+2019-04-30 16:26:12,180-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：竞标天数写1天
+2019-04-30 16:26:12,180-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanRate': '18.0', 'biddingDays': '10', 'loanDateType': '0', 'memberId': '1030', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'loanTerm': '6', 'amount': '600'}
+2019-04-30 16:26:12,345-INFO-do_log.py-[line:28]-add-日志信息：结束测试：竞标天数写1天
+2019-04-30 16:26:12,345-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：竞标天数写10天
+2019-04-30 16:26:12,345-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanRate': '18.0', 'biddingDays': '10', 'loanDateType': '0', 'memberId': '1030', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'loanTerm': '6', 'amount': '600'}
+2019-04-30 16:26:12,466-INFO-do_log.py-[line:28]-add-日志信息：结束测试：竞标天数写10天
+2019-04-30 16:26:12,467-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：竞标天数写11天
+2019-04-30 16:26:12,467-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanRate': '18.0', 'biddingDays': '11', 'loanDateType': '0', 'memberId': '1030', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'loanTerm': '6', 'amount': '600'}
+2019-04-30 16:26:12,581-ERROR-do_log.py-[line:34]-add-日志信息：case:竞标天数写11天,请求的数据:{"memberId":"1030","title":"测试加标，借款二十万","loanRate":"18.0","amount":"600","loanTerm":"6","loanDateType":"0","repaymemtWay":"4","biddingDays":"11"},测试报错：'{"status":0,"code":"20103","data":null,"msg":"竞标天数应为1-10"}' != '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'
+- {"status":0,"code":"20103","data":null,"msg":"竞标天数应为1-10"}
+?           ^         ^  --                     ^ ^^^^^^^^
++ {"status":1,"code":"10001","data":null,"msg":"加标成功"}
+?           ^         ^^^                       ^ ^^
+
+2019-04-30 16:26:12,582-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：借款类型输入除0，2，4之外的其他数字
+2019-04-30 16:26:12,582-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanRate': '18.0', 'biddingDays': '11', 'loanDateType': '3', 'memberId': '1030', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'loanTerm': '6', 'amount': '600'}
+2019-04-30 16:26:12,694-INFO-do_log.py-[line:28]-add-日志信息：结束测试：借款类型输入除0，2，4之外的其他数字
+2019-04-30 16:26:12,694-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：年化率大于24%
+2019-04-30 16:26:12,694-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanRate': '25.0', 'biddingDays': '11', 'loanDateType': '3', 'memberId': '1030', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'loanTerm': '6', 'amount': '600'}
+2019-04-30 16:26:12,815-INFO-do_log.py-[line:28]-add-日志信息：结束测试：年化率大于24%
+2019-04-30 16:26:12,815-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：年化率等于0
+2019-04-30 16:26:12,815-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanRate': '0', 'biddingDays': '11', 'loanDateType': '3', 'memberId': '1030', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'loanTerm': '6', 'amount': '600'}
+2019-04-30 16:26:12,944-INFO-do_log.py-[line:28]-add-日志信息：结束测试：年化率等于0
+2019-04-30 16:26:12,946-INFO-do_log.py-[line:28]-add-日志信息：开始执行测试：年化率小于0
+2019-04-30 16:26:12,946-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanRate': '-18.0', 'biddingDays': '11', 'loanDateType': '3', 'memberId': '1030', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'loanTerm': '6', 'amount': '600'}
+2019-04-30 16:26:13,066-INFO-do_log.py-[line:28]-add-日志信息：结束测试：年化率小于0
+2019-04-30 16:26:13,068-INFO-do_log.py-[line:28]-bidLoan-日志信息：准备测试前置
+2019-04-30 16:26:13,236-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：不登录，直接投标
+2019-04-30 16:26:13,236-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '100'}
+2019-04-30 16:26:13,437-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:不登录，直接投标,请求的数据:{"mobilephone":"13660000111","amount":"100"},测试通过
+2019-04-30 16:26:13,437-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：不登录，直接投标
+2019-04-30 16:26:13,437-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：正常登录
+2019-04-30 16:26:13,437-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'pwd': '12345678'}
+2019-04-30 16:26:13,644-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:正常登录,请求的数据:{"mobilephone":"13660000111","pwd":"12345678"},测试通过
+2019-04-30 16:26:13,644-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：正常登录
+2019-04-30 16:26:13,644-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：新增一个项目，借款人id在member表中已存在
+2019-04-30 16:26:13,645-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'loanRate': '18.0', 'biddingDays': '6', 'loanDateType': '0', 'memberId': '2738', 'repaymemtWay': '4', 'title': '测试加标，借款二十万', 'loanTerm': '6', 'amount': '200000'}
+2019-04-30 16:26:13,869-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:新增一个项目，借款人id在member表中已存在,请求的数据:{"memberId":"2738","title":"测试加标，借款二十万","loanRate":"18.0","amount":"200000","loanTerm":"6","loanDateType":"0","repaymemtWay":"4","biddingDays":"6"},测试通过
+2019-04-30 16:26:13,869-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：新增一个项目，借款人id在member表中已存在
+2019-04-30 16:26:13,869-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的是未开始状态，用户投资金额是100的倍数，并且小于剩余可投金额
+2019-04-30 16:26:13,871-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'loanId': '6448', 'memberId': '2738', 'amount': '100000000'}
+2019-04-30 16:26:13,989-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的是未开始状态，用户投资金额是100的倍数，并且小于剩余可投金额,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6448","amount":"100000000"},测试通过
+2019-04-30 16:26:13,989-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的是未开始状态，用户投资金额是100的倍数，并且小于剩余可投金额
+2019-04-30 16:26:13,989-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：审核新增加的标
+2019-04-30 16:26:13,990-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'id': '6448', 'status': 4}
+2019-04-30 16:26:14,107-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:审核新增加的标,请求的数据:{"id":"6448","status":4},测试通过
+2019-04-30 16:26:14,107-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：审核新增加的标
+2019-04-30 16:26:14,108-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的状态是投标中，用户投资金额是100的倍数，并且小于剩余可投金额
+2019-04-30 16:26:14,108-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'loanId': '6448', 'memberId': '2738', 'amount': '190000'}
+2019-04-30 16:26:14,244-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的状态是投标中，用户投资金额是100的倍数，并且小于剩余可投金额,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6448","amount":"190000"},测试通过
+2019-04-30 16:26:14,328-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的状态是投标中，用户投资金额是100的倍数，并且小于剩余可投金额
+2019-04-30 16:26:14,328-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的状态是投标中，用户投资金额是100的倍数，并且大于剩余可投金额
+2019-04-30 16:26:14,328-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'loanId': '6448', 'memberId': '2738', 'amount': '30000'}
+2019-04-30 16:26:14,440-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的状态是投标中，用户投资金额是100的倍数，并且大于剩余可投金额,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6448","amount":"30000"},测试通过
+2019-04-30 16:26:14,440-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的状态是投标中，用户投资金额是100的倍数，并且大于剩余可投金额
+2019-04-30 16:26:14,441-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的状态是投标中，用户投资金额是0
+2019-04-30 16:26:14,441-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'loanId': '6448', 'memberId': '2738', 'amount': '0'}
+2019-04-30 16:26:14,555-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的状态是投标中，用户投资金额是0,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6448","amount":"0"},测试通过
+2019-04-30 16:26:14,555-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的状态是投标中，用户投资金额是0
+2019-04-30 16:26:14,556-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的状态是投标中，用户投资金额不是100的倍数，并且小于剩余可投金额
+2019-04-30 16:26:14,556-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'loanId': '6448', 'memberId': '2738', 'amount': '699'}
+2019-04-30 16:26:14,671-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的状态是投标中，用户投资金额不是100的倍数，并且小于剩余可投金额,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6448","amount":"699"},测试通过
+2019-04-30 16:26:14,671-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的状态是投标中，用户投资金额不是100的倍数，并且小于剩余可投金额
+2019-04-30 16:26:14,671-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的状态是投标中，用户投资金额是100的倍数，并且等于剩余可投金额
+2019-04-30 16:26:14,671-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'loanId': '6448', 'memberId': '2738', 'amount': '10000'}
+2019-04-30 16:26:14,816-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的状态是投标中，用户投资金额是100的倍数，并且等于剩余可投金额,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6448","amount":"10000"},测试通过
+2019-04-30 16:26:14,911-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的状态是投标中，用户投资金额是100的倍数，并且等于剩余可投金额
+2019-04-30 16:26:14,911-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的状态是已结束，用户投资金额是100的倍数
+2019-04-30 16:26:14,911-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'loanId': '6448', 'memberId': '2738', 'amount': '100000000'}
+2019-04-30 16:26:15,028-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的状态是已结束，用户投资金额是100的倍数,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6448","amount":"100000000"},测试通过
+2019-04-30 16:26:15,028-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的状态是已结束，用户投资金额是100的倍数
+2019-04-30 16:26:15,029-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：标的不存在，用户输入投资金额
+2019-04-30 16:26:15,029-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'loanId': '13999', 'memberId': '2738', 'amount': '100000000'}
+2019-04-30 16:26:15,165-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:标的不存在，用户输入投资金额,请求的数据:{"memberId":"2738","password":"12345678","loanId":"13999","amount":"100000000"},测试通过
+2019-04-30 16:26:15,165-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：标的不存在，用户输入投资金额
+2019-04-30 16:26:15,165-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：不输入用户ID，输入密码，标id，投资金额
+2019-04-30 16:26:15,165-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'loanId': '6448', 'memberId': '', 'amount': '100000000'}
+2019-04-30 16:26:15,289-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:不输入用户ID，输入密码，标id，投资金额,请求的数据:{"memberId":"","password":"12345678","loanId":"6448","amount":"100000000"},测试通过
+2019-04-30 16:26:15,289-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：不输入用户ID，输入密码，标id，投资金额
+2019-04-30 16:26:15,289-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：输入用户ID，标id,投资金额，不输入密码
+2019-04-30 16:26:15,289-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'memberId': '2738', 'amount': '600'}
+2019-04-30 16:26:15,414-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:输入用户ID，标id,投资金额，不输入密码,请求的数据:{"memberId":"2738","password":"12345678","amount":"600"},测试通过
+2019-04-30 16:26:15,414-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：输入用户ID，标id,投资金额，不输入密码
+2019-04-30 16:26:15,414-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：输入用户ID,密码，投资金额，不输入标id
+2019-04-30 16:26:15,414-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'memberId': '2738', 'amount': '600'}
+2019-04-30 16:26:15,532-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:输入用户ID,密码，投资金额，不输入标id,请求的数据:{"memberId":"2738","password":"12345678","amount":"600"},测试通过
+2019-04-30 16:26:15,532-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：输入用户ID,密码，投资金额，不输入标id
+2019-04-30 16:26:15,532-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：输入用户ID,密码，标id，不输入投资金额
+2019-04-30 16:26:15,532-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'loanId': '6448', 'memberId': '2738'}
+2019-04-30 16:26:15,647-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:输入用户ID,密码，标id，不输入投资金额,请求的数据:{"memberId":"2738","password":"12345678","loanId":"6448"},测试通过
+2019-04-30 16:26:15,647-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：输入用户ID,密码，标id，不输入投资金额
+2019-04-30 16:26:15,647-INFO-do_log.py-[line:28]-bidLoan-日志信息：开始执行测试：输入不存在的用户ID,密码、标id，投资金额
+2019-04-30 16:26:15,648-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'password': '12345678', 'loanId': '6448', 'memberId': 132600322, 'amount': '600'}
+2019-04-30 16:26:15,759-INFO-do_log.py-[line:28]-bidLoan-日志信息：case:输入不存在的用户ID,密码、标id，投资金额,请求的数据:{"memberId":132600322,"password":"12345678","loanId":"6448","amount":"600"},测试通过
+2019-04-30 16:26:15,759-INFO-do_log.py-[line:28]-bidLoan-日志信息：结束测试：输入不存在的用户ID,密码、标id，投资金额
+2019-04-30 16:26:15,759-INFO-do_log.py-[line:28]-login-日志信息：准备测试前置
+2019-04-30 16:26:15,760-INFO-do_log.py-[line:28]-login-日志信息：开始执行测试：登录-输入已注册过的手机号，与之对应的密码
+2019-04-30 16:26:15,760-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'pwd': '12345678'}
+2019-04-30 16:26:15,845-DEBUG-do_log.py-[line:25]-login-日志信息：输出debug级别日志
+2019-04-30 16:26:15,845-INFO-do_log.py-[line:28]-login-日志信息：输出info级别日志
+2019-04-30 16:26:15,845-WARNING-do_log.py-[line:31]-login-日志信息：输出warning级别日志
+2019-04-30 16:26:15,914-INFO-do_log.py-[line:28]-login-日志信息：结束测试：登录-输入已注册过的手机号，与之对应的密码
+2019-04-30 16:26:15,914-INFO-do_log.py-[line:28]-login-日志信息：开始执行测试：登录-输入没有注册过的手机号，密码输入123456
+2019-04-30 16:26:15,914-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13260030000', 'pwd': '123456'}
+2019-04-30 16:26:15,960-DEBUG-do_log.py-[line:25]-login-日志信息：输出debug级别日志
+2019-04-30 16:26:15,960-INFO-do_log.py-[line:28]-login-日志信息：输出info级别日志
+2019-04-30 16:26:15,960-WARNING-do_log.py-[line:31]-login-日志信息：输出warning级别日志
+2019-04-30 16:26:16,036-INFO-do_log.py-[line:28]-login-日志信息：结束测试：登录-输入没有注册过的手机号，密码输入123456
+2019-04-30 16:26:16,036-INFO-do_log.py-[line:28]-login-日志信息：开始执行测试：登录-输入已注册过的手机号，不输入密码
+2019-04-30 16:26:16,036-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'pwd': ''}
+2019-04-30 16:26:16,079-DEBUG-do_log.py-[line:25]-login-日志信息：输出debug级别日志
+2019-04-30 16:26:16,081-INFO-do_log.py-[line:28]-login-日志信息：输出info级别日志
+2019-04-30 16:26:16,081-WARNING-do_log.py-[line:31]-login-日志信息：输出warning级别日志
+2019-04-30 16:26:16,161-INFO-do_log.py-[line:28]-login-日志信息：结束测试：登录-输入已注册过的手机号，不输入密码
+2019-04-30 16:26:16,161-INFO-do_log.py-[line:28]-login-日志信息：开始执行测试：登录-手机号和密码都为空
+2019-04-30 16:26:16,161-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '', 'pwd': ''}
+2019-04-30 16:26:16,204-DEBUG-do_log.py-[line:25]-login-日志信息：输出debug级别日志
+2019-04-30 16:26:16,204-INFO-do_log.py-[line:28]-login-日志信息：输出info级别日志
+2019-04-30 16:26:16,204-WARNING-do_log.py-[line:31]-login-日志信息：输出warning级别日志
+2019-04-30 16:26:16,276-INFO-do_log.py-[line:28]-login-日志信息：结束测试：登录-手机号和密码都为空
+2019-04-30 16:26:16,278-INFO-do_log.py-[line:28]-recharge-日志信息：准备测试前置
+2019-04-30 16:26:16,440-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：不登录，直接充值
+2019-04-30 16:26:16,519-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '100'}
+2019-04-30 16:26:16,723-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：不登录，直接充值
+2019-04-30 16:26:16,723-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：正常登录
+2019-04-30 16:26:16,828-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'pwd': '12345678'}
+2019-04-30 16:26:16,947-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：正常登录
+2019-04-30 16:26:16,947-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：正常充值
+2019-04-30 16:26:17,026-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '100'}
+2019-04-30 16:26:17,253-DEBUG-do_log.py-[line:25]-recharge-日志信息：case:正常充值,请求的数据:{"mobilephone":"13660000111","amount":"100"},测试通过
+2019-04-30 16:26:17,253-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：正常充值
+2019-04-30 16:26:17,255-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：只输入手机号，不输入充值金额
+2019-04-30 16:26:17,335-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': ''}
+2019-04-30 16:26:17,447-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：只输入手机号，不输入充值金额
+2019-04-30 16:26:17,448-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值金额为0
+2019-04-30 16:26:17,529-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '0'}
+2019-04-30 16:26:17,730-DEBUG-do_log.py-[line:25]-recharge-日志信息：case:输入已注册过的手机号，充值金额为0,请求的数据:{"mobilephone":"13660000111","amount":"0"},测试通过
+2019-04-30 16:26:17,732-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值金额为0
+2019-04-30 16:26:17,732-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值金额为500000
+2019-04-30 16:26:17,812-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '500000'}
+2019-04-30 16:26:18,051-DEBUG-do_log.py-[line:25]-recharge-日志信息：case:输入已注册过的手机号，充值金额为500000,请求的数据:{"mobilephone":"13660000111","amount":"500000"},测试通过
+2019-04-30 16:26:18,051-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值金额为500000
+2019-04-30 16:26:18,051-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值金额为500001
+2019-04-30 16:26:18,131-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '500001'}
+2019-04-30 16:26:18,263-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值金额为500001
+2019-04-30 16:26:18,263-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值金额为负数
+2019-04-30 16:26:18,348-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '-100'}
+2019-04-30 16:26:18,459-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值金额为负数
+2019-04-30 16:26:18,460-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值金额为汉字
+2019-04-30 16:26:18,539-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '壹佰元'}
+2019-04-30 16:26:18,653-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值金额为汉字
+2019-04-30 16:26:18,653-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值含有1位小数
+2019-04-30 16:26:18,737-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '100.5'}
+2019-04-30 16:26:18,954-DEBUG-do_log.py-[line:25]-recharge-日志信息：case:输入已注册过的手机号，充值含有1位小数,请求的数据:{"mobilephone":"13660000111","amount":"100.5"},测试通过
+2019-04-30 16:26:18,954-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值含有1位小数
+2019-04-30 16:26:18,954-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值金额含有2位小数
+2019-04-30 16:26:19,042-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '100.26'}
+2019-04-30 16:26:19,319-ERROR-do_log.py-[line:34]-recharge-日志信息：case:输入已注册过的手机号，充值金额含有2位小数,请求的数据:{"mobilephone":"13660000111","amount":"100.26"},测试报错：3002406.0799999996 != 3002406.08
+2019-04-30 16:26:19,321-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入已注册过的手机号，充值金额含有3位小数
+2019-04-30 16:26:19,401-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13660000111', 'amount': '100.265'}
+2019-04-30 16:26:19,517-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入已注册过的手机号，充值金额含有3位小数
+2019-04-30 16:26:19,517-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入没有注册过的手机号，充值金额正常
+2019-04-30 16:26:19,598-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13366660000', 'amount': '110'}
+2019-04-30 16:26:19,711-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入没有注册过的手机号，充值金额正常
+2019-04-30 16:26:19,713-INFO-do_log.py-[line:28]-recharge-日志信息：开始执行测试：输入10位手机号，充值金额正常
+2019-04-30 16:26:19,792-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '1326003295', 'amount': '110'}
+2019-04-30 16:26:19,904-INFO-do_log.py-[line:28]-recharge-日志信息：结束测试：输入10位手机号，充值金额正常
+2019-04-30 16:26:19,904-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:26:20,072-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-填写未注册过的正常手机号，密码输入8位、注册名全都正确填写
+2019-04-30 16:26:20,384-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '18999997657', 'regname': '小小', 'pwd': '12345678'}
+2019-04-30 16:26:20,561-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-填写未注册过的正常手机号，密码输入8位、注册名全都正确填写
+2019-04-30 16:26:20,562-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:26:20,717-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-填写未注册过的手机号、密码、不填注册名
+2019-04-30 16:26:21,032-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '18999998237', 'regname': '', 'pwd': '12345678'}
+2019-04-30 16:26:21,184-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-填写未注册过的手机号、密码、不填注册名
+2019-04-30 16:26:21,186-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:26:21,358-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-使用已经注册过的手机号注册，密码、注册名正确填写
+2019-04-30 16:26:21,359-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13517315120', 'regname': '', 'pwd': '123456'}
+2019-04-30 16:26:21,515-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-使用已经注册过的手机号注册，密码、注册名正确填写
+2019-04-30 16:26:21,516-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:26:21,678-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-手机号、密码、注册名全为空
+2019-04-30 16:26:21,678-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '', 'regname': '', 'pwd': ''}
+2019-04-30 16:26:21,828-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-手机号、密码、注册名全为空
+2019-04-30 16:26:21,828-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:26:21,996-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-填写手机号、不填写密码、注册名
+2019-04-30 16:26:21,996-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '13260032951', 'regname': '', 'pwd': ''}
+2019-04-30 16:26:22,147-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-填写手机号、不填写密码、注册名
+2019-04-30 16:26:22,148-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:26:22,309-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-不填手机号、填写密码、注册名
+2019-04-30 16:26:22,309-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '', 'regname': 'apple', 'pwd': '123456'}
+2019-04-30 16:26:22,460-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-不填手机号、填写密码、注册名
+2019-04-30 16:26:22,460-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:26:22,622-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-手机号填写10位，密码、注册名正确填写
+2019-04-30 16:26:22,622-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '1326003000', 'regname': '小小', 'pwd': '123456'}
+2019-04-30 16:26:22,775-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-手机号填写10位，密码、注册名正确填写
+2019-04-30 16:26:22,775-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:26:22,963-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-手机号填写12位，密码、注册名正确填写
+2019-04-30 16:26:22,963-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '132600300000', 'regname': '小小o', 'pwd': '123456'}
+2019-04-30 16:26:23,111-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-手机号填写12位，密码、注册名正确填写
+2019-04-30 16:26:23,112-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:26:23,275-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-手机号输入11位数字和特殊字符的组合
+2019-04-30 16:26:23,275-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '132600ab000', 'regname': '小小', 'pwd': '123456'}
+2019-04-30 16:26:23,423-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-手机号输入11位数字和特殊字符的组合
+2019-04-30 16:26:23,424-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:26:23,578-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-填写正常手机号，密码输入18位
+2019-04-30 16:26:23,907-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '18999992573', 'regname': '小小', 'pwd': 'abc_12345678901234'}
+2019-04-30 16:26:24,078-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-填写正常手机号，密码输入18位
+2019-04-30 16:26:24,079-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:26:24,233-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-填写正常手机号，密码输入19位
+2019-04-30 16:26:24,233-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': 'register_mobile', 'regname': '小小', 'pwd': 'abc_123456789012345'}
+2019-04-30 16:26:24,384-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-填写正常手机号，密码输入19位
+2019-04-30 16:26:24,385-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:26:24,540-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-填写正常手机号，密码输入6位
+2019-04-30 16:26:24,871-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': '18999994030', 'regname': '小小', 'pwd': '123456'}
+2019-04-30 16:26:25,030-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-填写正常手机号，密码输入6位
+2019-04-30 16:26:25,030-INFO-do_log.py-[line:28]-register-日志信息：准备测试前置
+2019-04-30 16:26:25,198-INFO-do_log.py-[line:28]-register-日志信息：开始执行测试：注册-填写正常手机号，密码输入5位
+2019-04-30 16:26:25,200-DEBUG-do_log.py-[line:25]-http_request-日志信息：请求的data：{'mobilephone': 'register_mobile', 'regname': '小小', 'pwd': '12345'}
+2019-04-30 16:26:25,355-INFO-do_log.py-[line:28]-register-日志信息：结束测试：注册-填写正常手机号，密码输入5位

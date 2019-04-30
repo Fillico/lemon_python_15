@@ -116,19 +116,19 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">20190426-前程贷测试报告</h1>
 <p class='attribute'><strong>测试人员 : </strong> Fillico</p>
-<p class='attribute'><strong>开始时间 : </strong> 2019-04-28 12:38:56</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:17.441000</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 67，通过 64，失败 3，通过率= 95.52%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2019-04-30 16:26:10</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:14.976000</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 70，通过 50，失败 4，错误 16，通过率= 71.43%</p>
 
 <p class='description'>前程贷测试报告</p>
 </div>
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 95.52% }</a>
-<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 3 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 64 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 67 }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 71.43% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 4 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 50 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 70 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -602,7 +602,7 @@ pt1_19: &lt;class 'dict'&gt;
     <pre>
     
 pt2_2: SELECT * FROM future.member WHERE mobilephone='13660000111';
-1801203.04
+2702105.32
 2738
 
 
@@ -622,7 +622,7 @@ pt2_2: SELECT * FROM future.member WHERE mobilephone='13660000111';
     <div id='div_pt2_3' class="collapse in" align="left">
     <pre>
     
-pt2_3: 标的id: 5698
+pt2_3: 标的id: 6448
 
 
     </pre>
@@ -700,102 +700,95 @@ pt2_3: 标的id: 5698
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
+<tr class='errorClass warning'>
+    <td>unittest.suite._ErrorHolder</td>
+    <td class="text-center">3</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center">3</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c3',3)" class="detail" id='c3'>详细</a></td>
+</tr>
+
+<tr id='ft3_1' class='none'>
+    <td class='errorCase'><div class='testcase'>RechargeTest)</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_1'>错误</button>
+    <div id='div_ft3_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_1'>错误</button>
+    <div id='div_ft3_1' class="collapse in" align="left">
+    <pre>
+    
+ft3_1: Traceback (most recent call last):
+  File "E:\lemon_python_15\python_api_3\testcases\test_bidLoan.py", line 80, in tearDownClass
+    cls.logs.remove_handler()
+AttributeError: type object 'RechargeTest' has no attribute 'logs'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_2' class='none'>
+    <td class='errorCase'><div class='testcase'>LoginTest)</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_2'>错误</button>
+    <div id='div_ft3_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_2'>错误</button>
+    <div id='div_ft3_2' class="collapse in" align="left">
+    <pre>
+    
+ft3_2: {"mobilephone":"","pwd":""}
+Traceback (most recent call last):
+  File "E:\lemon_python_15\python_api_3\testcases\test_login.py", line 45, in tearDownClass
+    cls.logs.remove_handler()
+AttributeError: type object 'LoginTest' has no attribute 'logs'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_3' class='none'>
+    <td class='errorCase'><div class='testcase'>RechargeTest)</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_3'>错误</button>
+    <div id='div_ft3_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_3'>错误</button>
+    <div id='div_ft3_3' class="collapse in" align="left">
+    <pre>
+    
+ft3_3: {"mobilephone":"1326003295","amount":"110"}
+SELECT * FROM future.member WHERE mobilephone = '1326003295';
+Traceback (most recent call last):
+  File "E:\lemon_python_15\python_api_3\testcases\test_recharge.py", line 79, in tearDownClass
+    cls.logs.remove_handler()
+AttributeError: type object 'RechargeTest' has no attribute 'logs'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
 <tr class='passClass warning'>
     <td>test_login.LoginTest</td>
     <td class="text-center">4</td>
     <td class="text-center">4</td>
     <td class="text-center">0</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c3',4)" class="detail" id='c3'>详细</a></td>
-</tr>
-
-<tr id='pt3_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_login_1</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt3_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_1'>通过</button>
-    <div id='div_pt3_1' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt3_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_1'>通过</button>
-    <div id='div_pt3_1' class="collapse in" align="left">
-    <pre>
-    
-pt3_1: {"mobilephone":"13660000111","pwd":"12345678"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt3_2' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_login_2</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt3_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_2'>通过</button>
-    <div id='div_pt3_2' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt3_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_2'>通过</button>
-    <div id='div_pt3_2' class="collapse in" align="left">
-    <pre>
-    
-pt3_2: {"mobilephone":"13260030000","pwd":"123456"}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt3_3' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_login_3</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt3_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_3'>通过</button>
-    <div id='div_pt3_3' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt3_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_3'>通过</button>
-    <div id='div_pt3_3' class="collapse in" align="left">
-    <pre>
-    
-pt3_3: {"mobilephone":"13660000111","pwd":""}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt3_4' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_login_4</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt3_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_4'>通过</button>
-    <div id='div_pt3_4' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt3_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_4'>通过</button>
-    <div id='div_pt3_4' class="collapse in" align="left">
-    <pre>
-    
-pt3_4: {"mobilephone":"","pwd":""}
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr class='passClass warning'>
-    <td>test_recharge.RechargeTest</td>
-    <td class="text-center">14</td>
-    <td class="text-center">14</td>
-    <td class="text-center">0</td>
-    <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c4',14)" class="detail" id='c4'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c4',4)" class="detail" id='c4'>详细</a></td>
 </tr>
 
 <tr id='pt4_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_01</div></td>
+    <td class='passCase'><div class='testcase'>test_login_1</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_pt4_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_1'>通过</button>
@@ -805,9 +798,7 @@ pt3_4: {"mobilephone":"","pwd":""}
     <div id='div_pt4_1' class="collapse in" align="left">
     <pre>
     
-pt4_1: {"mobilephone":"13660000111","amount":"100"}
-SELECT * FROM future.member WHERE mobilephone = '13660000111';
-1601203.04
+pt4_1: {"mobilephone":"13660000111","pwd":"12345678"}
 
 
     </pre>
@@ -816,7 +807,7 @@ SELECT * FROM future.member WHERE mobilephone = '13660000111';
 </tr>
 
 <tr id='pt4_2' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_02</div></td>
+    <td class='passCase'><div class='testcase'>test_login_2</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_pt4_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_2'>通过</button>
@@ -826,9 +817,7 @@ SELECT * FROM future.member WHERE mobilephone = '13660000111';
     <div id='div_pt4_2' class="collapse in" align="left">
     <pre>
     
-pt4_2: {"mobilephone":"13660000111","pwd":"12345678"}
-SELECT * FROM future.member WHERE mobilephone = '13660000111';
-1601203.04
+pt4_2: {"mobilephone":"13260030000","pwd":"123456"}
 
 
     </pre>
@@ -837,7 +826,7 @@ SELECT * FROM future.member WHERE mobilephone = '13660000111';
 </tr>
 
 <tr id='pt4_3' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_03</div></td>
+    <td class='passCase'><div class='testcase'>test_login_3</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_pt4_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_3'>通过</button>
@@ -847,11 +836,7 @@ SELECT * FROM future.member WHERE mobilephone = '13660000111';
     <div id='div_pt4_3' class="collapse in" align="left">
     <pre>
     
-pt4_3: {"mobilephone":"13660000111","amount":"100"}
-SELECT * FROM future.member WHERE mobilephone = '13660000111';
-1601203.04
-SELECT * FROM future.member WHERE mobilephone='13660000111';
-1601303.04
+pt4_3: {"mobilephone":"13660000111","pwd":""}
 
 
     </pre>
@@ -860,7 +845,7 @@ SELECT * FROM future.member WHERE mobilephone='13660000111';
 </tr>
 
 <tr id='pt4_4' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_04</div></td>
+    <td class='passCase'><div class='testcase'>test_login_4</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_pt4_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_4'>通过</button>
@@ -870,9 +855,7 @@ SELECT * FROM future.member WHERE mobilephone='13660000111';
     <div id='div_pt4_4' class="collapse in" align="left">
     <pre>
     
-pt4_4: {"mobilephone":"13660000111","amount":""}
-SELECT * FROM future.member WHERE mobilephone = '13660000111';
-1601303.04
+pt4_4: {"mobilephone":"","pwd":""}
 
 
     </pre>
@@ -880,233 +863,17 @@ SELECT * FROM future.member WHERE mobilephone = '13660000111';
     </td>
 </tr>
 
-<tr id='pt4_5' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_05</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_5'>通过</button>
-    <div id='div_pt4_5' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_5'>通过</button>
-    <div id='div_pt4_5' class="collapse in" align="left">
-    <pre>
-    
-pt4_5: {"mobilephone":"13660000111","amount":"0"}
-SELECT * FROM future.member WHERE mobilephone = '13660000111';
-1601303.04
-SELECT * FROM future.member WHERE mobilephone='13660000111';
-1601303.04
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt4_6' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_06</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_6'>通过</button>
-    <div id='div_pt4_6' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_6'>通过</button>
-    <div id='div_pt4_6' class="collapse in" align="left">
-    <pre>
-    
-pt4_6: {"mobilephone":"13660000111","amount":"500000"}
-SELECT * FROM future.member WHERE mobilephone = '13660000111';
-1601303.04
-SELECT * FROM future.member WHERE mobilephone='13660000111';
-2101303.04
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt4_7' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_07</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_7'>通过</button>
-    <div id='div_pt4_7' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_7'>通过</button>
-    <div id='div_pt4_7' class="collapse in" align="left">
-    <pre>
-    
-pt4_7: {"mobilephone":"13660000111","amount":"500001"}
-SELECT * FROM future.member WHERE mobilephone = '13660000111';
-2101303.04
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt4_8' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_08</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_8'>通过</button>
-    <div id='div_pt4_8' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_8'>通过</button>
-    <div id='div_pt4_8' class="collapse in" align="left">
-    <pre>
-    
-pt4_8: {"mobilephone":"13660000111","amount":"-100"}
-SELECT * FROM future.member WHERE mobilephone = '13660000111';
-2101303.04
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt4_9' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_09</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_9'>通过</button>
-    <div id='div_pt4_9' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_9'>通过</button>
-    <div id='div_pt4_9' class="collapse in" align="left">
-    <pre>
-    
-pt4_9: {"mobilephone":"13660000111","amount":"壹佰元"}
-SELECT * FROM future.member WHERE mobilephone = '13660000111';
-2101303.04
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt4_10' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_10</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_10' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_10'>通过</button>
-    <div id='div_pt4_10' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_10' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_10'>通过</button>
-    <div id='div_pt4_10' class="collapse in" align="left">
-    <pre>
-    
-pt4_10: {"mobilephone":"13660000111","amount":"100.5"}
-SELECT * FROM future.member WHERE mobilephone = '13660000111';
-2101303.04
-SELECT * FROM future.member WHERE mobilephone='13660000111';
-2101403.54
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt4_11' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_11</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_11' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_11'>通过</button>
-    <div id='div_pt4_11' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_11' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_11'>通过</button>
-    <div id='div_pt4_11' class="collapse in" align="left">
-    <pre>
-    
-pt4_11: {"mobilephone":"13660000111","amount":"100.26"}
-SELECT * FROM future.member WHERE mobilephone = '13660000111';
-2101403.54
-SELECT * FROM future.member WHERE mobilephone='13660000111';
-2101503.80
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt4_12' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_12</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_12' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_12'>通过</button>
-    <div id='div_pt4_12' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_12' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_12'>通过</button>
-    <div id='div_pt4_12' class="collapse in" align="left">
-    <pre>
-    
-pt4_12: {"mobilephone":"13660000111","amount":"100.265"}
-SELECT * FROM future.member WHERE mobilephone = '13660000111';
-2101503.80
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt4_13' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_13</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_13' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_13'>通过</button>
-    <div id='div_pt4_13' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_13' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_13'>通过</button>
-    <div id='div_pt4_13' class="collapse in" align="left">
-    <pre>
-    
-pt4_13: {"mobilephone":"13366660000","amount":"110"}
-SELECT * FROM future.member WHERE mobilephone = '13366660000';
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr id='pt4_14' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_recharge_14</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou
-    <button id='btn_pt4_14' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_14'>通过</button>
-    <div id='div_pt4_14' class="collapse">  -->
-    <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_pt4_14' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_14'>通过</button>
-    <div id='div_pt4_14' class="collapse in" align="left">
-    <pre>
-    
-pt4_14: {"mobilephone":"1326003295","amount":"110"}
-SELECT * FROM future.member WHERE mobilephone = '1326003295';
-
-
-    </pre>
-    </div>
-    </td>
-</tr>
-
-<tr class='passClass warning'>
-    <td>test_register.RegisterTest</td>
+<tr class='failClass warning'>
+    <td>test_recharge.RechargeTest</td>
+    <td class="text-center">14</td>
     <td class="text-center">13</td>
-    <td class="text-center">13</td>
+    <td class="text-center">1</td>
     <td class="text-center">0</td>
-    <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c5',13)" class="detail" id='c5'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c5',14)" class="detail" id='c5'>详细</a></td>
 </tr>
 
 <tr id='pt5_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_01</div></td>
+    <td class='passCase'><div class='testcase'>test_recharge_01</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_pt5_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_1'>通过</button>
@@ -1116,8 +883,9 @@ SELECT * FROM future.member WHERE mobilephone = '1326003295';
     <div id='div_pt5_1' class="collapse in" align="left">
     <pre>
     
-pt5_1: 18999999999
-{"mobilephone":"18999992013","pwd":"12345678","regname":"小小"}
+pt5_1: {"mobilephone":"13660000111","amount":"100"}
+SELECT * FROM future.member WHERE mobilephone = '13660000111';
+2502105.32
 
 
     </pre>
@@ -1126,7 +894,7 @@ pt5_1: 18999999999
 </tr>
 
 <tr id='pt5_2' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_02</div></td>
+    <td class='passCase'><div class='testcase'>test_recharge_02</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_pt5_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_2'>通过</button>
@@ -1136,8 +904,9 @@ pt5_1: 18999999999
     <div id='div_pt5_2' class="collapse in" align="left">
     <pre>
     
-pt5_2: 18999999999
-{"mobilephone":"18999991357","pwd":"12345678","regname":""}
+pt5_2: {"mobilephone":"13660000111","pwd":"12345678"}
+SELECT * FROM future.member WHERE mobilephone = '13660000111';
+2502105.32
 
 
     </pre>
@@ -1146,42 +915,160 @@ pt5_2: 18999999999
 </tr>
 
 <tr id='pt5_3' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_03</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td class='passCase'><div class='testcase'>test_recharge_03</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt5_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_3'>通过</button>
+    <div id='div_pt5_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt5_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt5_3'>通过</button>
+    <div id='div_pt5_3' class="collapse in" align="left">
+    <pre>
+    
+pt5_3: {"mobilephone":"13660000111","amount":"100"}
+SELECT * FROM future.member WHERE mobilephone = '13660000111';
+2502105.32
+SELECT * FROM future.member WHERE mobilephone='13660000111';
+2502205.32
+
+
+    </pre>
+    </div>
+    </td>
 </tr>
 
 <tr id='pt5_4' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_04</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td class='passCase'><div class='testcase'>test_recharge_04</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt5_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_4'>通过</button>
+    <div id='div_pt5_4' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt5_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt5_4'>通过</button>
+    <div id='div_pt5_4' class="collapse in" align="left">
+    <pre>
+    
+pt5_4: {"mobilephone":"13660000111","amount":""}
+SELECT * FROM future.member WHERE mobilephone = '13660000111';
+2502205.32
+
+
+    </pre>
+    </div>
+    </td>
 </tr>
 
 <tr id='pt5_5' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_05</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td class='passCase'><div class='testcase'>test_recharge_05</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt5_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_5'>通过</button>
+    <div id='div_pt5_5' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt5_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt5_5'>通过</button>
+    <div id='div_pt5_5' class="collapse in" align="left">
+    <pre>
+    
+pt5_5: {"mobilephone":"13660000111","amount":"0"}
+SELECT * FROM future.member WHERE mobilephone = '13660000111';
+2502205.32
+SELECT * FROM future.member WHERE mobilephone='13660000111';
+2502205.32
+
+
+    </pre>
+    </div>
+    </td>
 </tr>
 
 <tr id='pt5_6' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_06</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td class='passCase'><div class='testcase'>test_recharge_06</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt5_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_6'>通过</button>
+    <div id='div_pt5_6' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt5_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt5_6'>通过</button>
+    <div id='div_pt5_6' class="collapse in" align="left">
+    <pre>
+    
+pt5_6: {"mobilephone":"13660000111","amount":"500000"}
+SELECT * FROM future.member WHERE mobilephone = '13660000111';
+2502205.32
+SELECT * FROM future.member WHERE mobilephone='13660000111';
+3002205.32
+
+
+    </pre>
+    </div>
+    </td>
 </tr>
 
 <tr id='pt5_7' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_07</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td class='passCase'><div class='testcase'>test_recharge_07</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt5_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_7'>通过</button>
+    <div id='div_pt5_7' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt5_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt5_7'>通过</button>
+    <div id='div_pt5_7' class="collapse in" align="left">
+    <pre>
+    
+pt5_7: {"mobilephone":"13660000111","amount":"500001"}
+SELECT * FROM future.member WHERE mobilephone = '13660000111';
+3002205.32
+
+
+    </pre>
+    </div>
+    </td>
 </tr>
 
 <tr id='pt5_8' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_08</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td class='passCase'><div class='testcase'>test_recharge_08</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt5_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_8'>通过</button>
+    <div id='div_pt5_8' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt5_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt5_8'>通过</button>
+    <div id='div_pt5_8' class="collapse in" align="left">
+    <pre>
+    
+pt5_8: {"mobilephone":"13660000111","amount":"-100"}
+SELECT * FROM future.member WHERE mobilephone = '13660000111';
+3002205.32
+
+
+    </pre>
+    </div>
+    </td>
 </tr>
 
 <tr id='pt5_9' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_09</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td class='passCase'><div class='testcase'>test_recharge_09</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt5_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_9'>通过</button>
+    <div id='div_pt5_9' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt5_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt5_9'>通过</button>
+    <div id='div_pt5_9' class="collapse in" align="left">
+    <pre>
+    
+pt5_9: {"mobilephone":"13660000111","amount":"壹佰元"}
+SELECT * FROM future.member WHERE mobilephone = '13660000111';
+3002205.32
+
+
+    </pre>
+    </div>
+    </td>
 </tr>
 
 <tr id='pt5_10' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_10</div></td>
+    <td class='passCase'><div class='testcase'>test_recharge_10</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_pt5_10' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_10'>通过</button>
@@ -1191,8 +1078,11 @@ pt5_2: 18999999999
     <div id='div_pt5_10' class="collapse in" align="left">
     <pre>
     
-pt5_10: 18999999999
-{"mobilephone":"18999997934","pwd":"abc_12345678901234","regname":"小小"}
+pt5_10: {"mobilephone":"13660000111","amount":"100.5"}
+SELECT * FROM future.member WHERE mobilephone = '13660000111';
+3002205.32
+SELECT * FROM future.member WHERE mobilephone='13660000111';
+3002305.82
 
 
     </pre>
@@ -1200,13 +1090,39 @@ pt5_10: 18999999999
     </td>
 </tr>
 
-<tr id='pt5_11' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_11</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+<tr id='ft5_11' class='none'>
+    <td class='failCase'><div class='testcase'>test_recharge_11</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft5_11' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft5_11'>失败</button>
+    <div id='div_ft5_11' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft5_11' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft5_11'>失败</button>
+    <div id='div_ft5_11' class="collapse in" align="left">
+    <pre>
+    
+ft5_11: {"mobilephone":"13660000111","amount":"100.26"}
+SELECT * FROM future.member WHERE mobilephone = '13660000111';
+3002305.82
+SELECT * FROM future.member WHERE mobilephone='13660000111';
+3002406.08
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\lemon_python_15\python_api_3\testcases\test_recharge.py", line 73, in test_recharge
+    raise e
+  File "E:\lemon_python_15\python_api_3\testcases\test_recharge.py", line 68, in test_recharge
+    self.assertEqual(float(before) + float(eval(case.data)['amount']), float(after))
+AssertionError: 3002406.0799999996 != 3002406.08
+
+
+    </pre>
+    </div>
+    </td>
 </tr>
 
 <tr id='pt5_12' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_12</div></td>
+    <td class='passCase'><div class='testcase'>test_recharge_12</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_pt5_12' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_12'>通过</button>
@@ -1216,8 +1132,9 @@ pt5_10: 18999999999
     <div id='div_pt5_12' class="collapse in" align="left">
     <pre>
     
-pt5_12: 18999999999
-{"mobilephone":"18999996812","pwd":"123456","regname":"小小"}
+pt5_12: {"mobilephone":"13660000111","amount":"100.265"}
+SELECT * FROM future.member WHERE mobilephone = '13660000111';
+3002406.08
 
 
     </pre>
@@ -1226,17 +1143,355 @@ pt5_12: 18999999999
 </tr>
 
 <tr id='pt5_13' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_register_13</div></td>
-    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td class='passCase'><div class='testcase'>test_recharge_13</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt5_13' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_13'>通过</button>
+    <div id='div_pt5_13' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt5_13' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt5_13'>通过</button>
+    <div id='div_pt5_13' class="collapse in" align="left">
+    <pre>
+    
+pt5_13: {"mobilephone":"13366660000","amount":"110"}
+SELECT * FROM future.member WHERE mobilephone = '13366660000';
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt5_14' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_recharge_14</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt5_14' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt5_14'>通过</button>
+    <div id='div_pt5_14' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt5_14' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt5_14'>通过</button>
+    <div id='div_pt5_14' class="collapse in" align="left">
+    <pre>
+    
+pt5_14: {"mobilephone":"1326003295","amount":"110"}
+SELECT * FROM future.member WHERE mobilephone = '1326003295';
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='errorClass warning'>
+    <td>test_register.RegisterTest</td>
+    <td class="text-center">13</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center">13</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c6',13)" class="detail" id='c6'>详细</a></td>
+</tr>
+
+<tr id='ft6_1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_01</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft6_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft6_1'>错误</button>
+    <div id='div_ft6_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft6_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft6_1'>错误</button>
+    <div id='div_ft6_1' class="collapse in" align="left">
+    <pre>
+    
+ft6_1: 18999999999
+{"mobilephone":"18999997657","pwd":"12345678","regname":"小小"}
+Traceback (most recent call last):
+  File "E:\lemon_python_15\python_api_3\testcases\test_register.py", line 68, in tearDown
+    self.logs.remove_handler()
+AttributeError: 'RegisterTest' object has no attribute 'logs'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft6_2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_02</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft6_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft6_2'>错误</button>
+    <div id='div_ft6_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft6_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft6_2'>错误</button>
+    <div id='div_ft6_2' class="collapse in" align="left">
+    <pre>
+    
+ft6_2: 18999999999
+{"mobilephone":"18999998237","pwd":"12345678","regname":""}
+Traceback (most recent call last):
+  File "E:\lemon_python_15\python_api_3\testcases\test_register.py", line 68, in tearDown
+    self.logs.remove_handler()
+AttributeError: 'RegisterTest' object has no attribute 'logs'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft6_3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_03</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft6_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft6_3'>错误</button>
+    <div id='div_ft6_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft6_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft6_3'>错误</button>
+    <div id='div_ft6_3' class="collapse in" align="left">
+    <pre>
+    
+ft6_3: Traceback (most recent call last):
+  File "E:\lemon_python_15\python_api_3\testcases\test_register.py", line 68, in tearDown
+    self.logs.remove_handler()
+AttributeError: 'RegisterTest' object has no attribute 'logs'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft6_4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_04</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft6_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft6_4'>错误</button>
+    <div id='div_ft6_4' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft6_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft6_4'>错误</button>
+    <div id='div_ft6_4' class="collapse in" align="left">
+    <pre>
+    
+ft6_4: Traceback (most recent call last):
+  File "E:\lemon_python_15\python_api_3\testcases\test_register.py", line 68, in tearDown
+    self.logs.remove_handler()
+AttributeError: 'RegisterTest' object has no attribute 'logs'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft6_5' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_05</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft6_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft6_5'>错误</button>
+    <div id='div_ft6_5' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft6_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft6_5'>错误</button>
+    <div id='div_ft6_5' class="collapse in" align="left">
+    <pre>
+    
+ft6_5: Traceback (most recent call last):
+  File "E:\lemon_python_15\python_api_3\testcases\test_register.py", line 68, in tearDown
+    self.logs.remove_handler()
+AttributeError: 'RegisterTest' object has no attribute 'logs'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft6_6' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_06</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft6_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft6_6'>错误</button>
+    <div id='div_ft6_6' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft6_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft6_6'>错误</button>
+    <div id='div_ft6_6' class="collapse in" align="left">
+    <pre>
+    
+ft6_6: Traceback (most recent call last):
+  File "E:\lemon_python_15\python_api_3\testcases\test_register.py", line 68, in tearDown
+    self.logs.remove_handler()
+AttributeError: 'RegisterTest' object has no attribute 'logs'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft6_7' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_07</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft6_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft6_7'>错误</button>
+    <div id='div_ft6_7' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft6_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft6_7'>错误</button>
+    <div id='div_ft6_7' class="collapse in" align="left">
+    <pre>
+    
+ft6_7: Traceback (most recent call last):
+  File "E:\lemon_python_15\python_api_3\testcases\test_register.py", line 68, in tearDown
+    self.logs.remove_handler()
+AttributeError: 'RegisterTest' object has no attribute 'logs'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft6_8' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_08</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft6_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft6_8'>错误</button>
+    <div id='div_ft6_8' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft6_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft6_8'>错误</button>
+    <div id='div_ft6_8' class="collapse in" align="left">
+    <pre>
+    
+ft6_8: Traceback (most recent call last):
+  File "E:\lemon_python_15\python_api_3\testcases\test_register.py", line 68, in tearDown
+    self.logs.remove_handler()
+AttributeError: 'RegisterTest' object has no attribute 'logs'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft6_9' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_09</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft6_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft6_9'>错误</button>
+    <div id='div_ft6_9' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft6_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft6_9'>错误</button>
+    <div id='div_ft6_9' class="collapse in" align="left">
+    <pre>
+    
+ft6_9: Traceback (most recent call last):
+  File "E:\lemon_python_15\python_api_3\testcases\test_register.py", line 68, in tearDown
+    self.logs.remove_handler()
+AttributeError: 'RegisterTest' object has no attribute 'logs'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft6_10' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_10</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft6_10' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft6_10'>错误</button>
+    <div id='div_ft6_10' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft6_10' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft6_10'>错误</button>
+    <div id='div_ft6_10' class="collapse in" align="left">
+    <pre>
+    
+ft6_10: 18999999999
+{"mobilephone":"18999992573","pwd":"abc_12345678901234","regname":"小小"}
+Traceback (most recent call last):
+  File "E:\lemon_python_15\python_api_3\testcases\test_register.py", line 68, in tearDown
+    self.logs.remove_handler()
+AttributeError: 'RegisterTest' object has no attribute 'logs'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft6_11' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_11</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft6_11' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft6_11'>错误</button>
+    <div id='div_ft6_11' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft6_11' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft6_11'>错误</button>
+    <div id='div_ft6_11' class="collapse in" align="left">
+    <pre>
+    
+ft6_11: Traceback (most recent call last):
+  File "E:\lemon_python_15\python_api_3\testcases\test_register.py", line 68, in tearDown
+    self.logs.remove_handler()
+AttributeError: 'RegisterTest' object has no attribute 'logs'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft6_12' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_12</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft6_12' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft6_12'>错误</button>
+    <div id='div_ft6_12' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft6_12' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft6_12'>错误</button>
+    <div id='div_ft6_12' class="collapse in" align="left">
+    <pre>
+    
+ft6_12: 18999999999
+{"mobilephone":"18999994030","pwd":"123456","regname":"小小"}
+Traceback (most recent call last):
+  File "E:\lemon_python_15\python_api_3\testcases\test_register.py", line 68, in tearDown
+    self.logs.remove_handler()
+AttributeError: 'RegisterTest' object has no attribute 'logs'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft6_13' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_13</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft6_13' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft6_13'>错误</button>
+    <div id='div_ft6_13' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft6_13' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft6_13'>错误</button>
+    <div id='div_ft6_13' class="collapse in" align="left">
+    <pre>
+    
+ft6_13: Traceback (most recent call last):
+  File "E:\lemon_python_15\python_api_3\testcases\test_register.py", line 68, in tearDown
+    self.logs.remove_handler()
+AttributeError: 'RegisterTest' object has no attribute 'logs'
+
+
+    </pre>
+    </div>
+    </td>
 </tr>
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>67</td>
-    <td>64</td>
-    <td>3</td>
-    <td>0</td>
-    <td>通过率：95.52%</td>
+    <td>70</td>
+    <td>50</td>
+    <td>4</td>
+    <td>16</td>
+    <td>通过率：71.43%</td>
 </tr>
 </table>
 
