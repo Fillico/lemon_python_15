@@ -13,8 +13,6 @@ print(sys.path)
 
 suite = unittest.TestSuite()
 loader = unittest.TestLoader()
-# suite.addTest(loader.loadTestsFromModule(test_register_2))
-# suite.addTest(loader.loadTestsFromModule(test_login))
 
 discover = unittest.defaultTestLoader.discover(contants.case_dir, "test_*.py")
 
