@@ -2,11 +2,11 @@
 # @author:Fillico
 # @date:2019/4/26 11:09
 
+import sys
 import HTMLTestRunnerNew
 import os
 import unittest
 from python_api_3.common import contants
-import sys
 
 sys.path.append('./')
 print(sys.path)
