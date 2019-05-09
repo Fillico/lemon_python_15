@@ -3,13 +3,15 @@
 # @date:2019/4/26 11:09
 
 import sys
+
+sys.path.append('./')
+print(sys.path)
+
 import HTMLTestRunnerNew
 import os
 import unittest
 from python_api_3.common import contants
 
-sys.path.append('./')
-print(sys.path)
 
 suite = unittest.TestSuite()
 loader = unittest.TestLoader()
