@@ -40,9 +40,10 @@ class RechargeTest(unittest.TestCase):
         sql = "SELECT * FROM future.member WHERE mobilephone = '{}';".format(eval(case.data)['mobilephone'])
         print(sql)
         member = self.mysql.fetch_one(sql)
+        print(member)
         if member is not None:
-            print(member['leaveamount'])
-            before = member['leaveamount']
+            print(member['LeaveAmount'])
+            before = member['LeaveAmount']
 
         resp = self.http_request.session_request(case.method, case.url, case.data)
 
@@ -63,8 +64,8 @@ class RechargeTest(unittest.TestCase):
                 sql = "SELECT * FROM future.member WHERE mobilephone='{}';".format(eval(case.data)['mobilephone'])
                 print(sql)
                 member = self.mysql.fetch_one(sql)
-                print(member['leaveamount'])
-                after = member['leaveamount']
+                print(member['LeaveAmount'])
+                after = member['LeaveAmount']
                 self.assertEqual(float(before) + float(eval(case.data)['amount']), float(after))
                 logs.debug('case:{},请求的数据:{},测试通过'.format(case.title, case.data))
         except AssertionError as e:
