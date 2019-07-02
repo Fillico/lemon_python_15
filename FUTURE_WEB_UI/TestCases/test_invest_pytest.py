@@ -32,6 +32,7 @@ class TestInvestPage:
     @pytest.mark.parametrize("data",ID.invest_fail_data)
     def test_invest_failed(self, data,login_web):
         logging.info("======投资用例：异常场景-投资金额为非100的整数倍======")
+        IndexPage(login_web).click_invest_btn()
         userMoney_beforeInvest = BidPage(login_web).get_user_left_money()  # 投资前获取余额
         BidPage(login_web).invest(data["invest_money"])  # 投资
         userMoney_afterInvest = BidPage(login_web).get_user_left_money()  # 投资后获取余额
