@@ -66,9 +66,9 @@ def session_action():
 
 @pytest.fixture(scope="class")
 def login_web(open_url):
-    open_url.get(CD.web_login_url)
+    # open_url.get(CD.web_login_url)
     LoginPage(open_url).login(LD.success_data["user"], LD.success_data["password"])
-    IndexPage(open_url).click_invest_btn()
+    # IndexPage(open_url).click_invest_btn()
     yield open_url
-    driver.quit()
+    # driver.quit()
 
