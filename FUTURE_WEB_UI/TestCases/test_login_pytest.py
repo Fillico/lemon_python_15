@@ -5,10 +5,10 @@
 # description:
 
 import pytest
-from PageObject.login_page import LoginPage
-from TestDatas import login_datas as ld
+from FUTURE_WEB_UI.PageObject.login_page import LoginPage
+from FUTURE_WEB_UI.TestDatas import login_datas as ld
 
-from PageObject.index_page import IndexPage
+from FUTURE_WEB_UI.PageObject.index_page import IndexPage
 
 
 # pytestmark = pytest.mark.module # 模块级别的标签名   放在引入包的后面，所有用例的前面

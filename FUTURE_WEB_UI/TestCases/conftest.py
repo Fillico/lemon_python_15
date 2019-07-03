@@ -6,11 +6,11 @@
 
 import pytest
 from selenium import webdriver
-from TestDatas import login_datas as LD
-from TestDatas import common_datas as CD
-from PageObject.login_page import LoginPage
-from PageObject.index_page import IndexPage
-from PageObject.bid_page import BidPage
+from FUTURE_WEB_UI.TestDatas import login_datas as LD
+from FUTURE_WEB_UI.TestDatas import common_datas as CD
+from FUTURE_WEB_UI.PageObject.login_page import LoginPage
+from FUTURE_WEB_UI.PageObject.index_page import IndexPage
+from FUTURE_WEB_UI.PageObject.bid_page import BidPage
 
 # 不能与unittest兼容
 

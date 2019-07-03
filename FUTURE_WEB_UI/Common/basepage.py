@@ -11,7 +11,7 @@ import time
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-from Common.dir_config import screenshot_dir
+from FUTURE_WEB_UI.Common.dir_config import screenshot_dir
 
 
 class BasePage:

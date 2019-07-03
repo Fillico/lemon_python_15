@@ -4,9 +4,9 @@
 # date:2019/6/23
 # description:
 
-from PageLocators.bid_page_locator import BidPageLocator as loc
+from FUTURE_WEB_UI.PageLocators.bid_page_locator import BidPageLocator as loc
 
-from Common.basepage import BasePage
+from FUTURE_WEB_UI.Common.basepage import BasePage
 
 
 class BidPage(BasePage):

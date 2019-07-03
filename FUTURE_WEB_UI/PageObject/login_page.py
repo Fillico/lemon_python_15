@@ -4,9 +4,9 @@
 # date:2019/6/7
 # function:
 
-from Common.basepage import BasePage
+from FUTURE_WEB_UI.Common.basepage import BasePage
 
-from PageLocators.login_page_locator import LoginPageLocator as loc
+from FUTURE_WEB_UI.PageLocators.login_page_locator import LoginPageLocator as loc
 
 
 class LoginPage(BasePage):

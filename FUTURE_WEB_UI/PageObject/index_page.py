@@ -5,9 +5,9 @@
 # function:
 import time
 
-from PageLocators.index_page_locator import IndexPageLocator as loc
+from FUTURE_WEB_UI.PageLocators.index_page_locator import IndexPageLocator as loc
 
-from Common.basepage import BasePage
+from FUTURE_WEB_UI.Common.basepage import BasePage
 
 
 class IndexPage(BasePage):

@@ -4,9 +4,9 @@
 # date:2019/6/23
 # description:
 
-from Common.basepage import BasePage
+from FUTURE_WEB_UI.Common.basepage import BasePage
 
-from PageLocators.user_page_locator import UserPageLocator as loc
+from FUTURE_WEB_UI.PageLocators.user_page_locator import UserPageLocator as loc
 
 
 class UserPage(BasePage):

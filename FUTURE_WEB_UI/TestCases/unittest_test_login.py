@@ -9,11 +9,11 @@ import unittest
 import pytest
 from ddt import ddt, data
 from selenium import webdriver
-from PageObject.index_page import IndexPage
-from PageObject.login_page import LoginPage
-from TestDatas import login_datas as ld
+from FUTURE_WEB_UI.PageObject.index_page import IndexPage
+from FUTURE_WEB_UI.PageObject.login_page import LoginPage
+from FUTURE_WEB_UI.TestDatas import login_datas as ld
 
-from TestDatas import common_datas as cd
+from FUTURE_WEB_UI.TestDatas import common_datas as cd
 
 
 @ddt

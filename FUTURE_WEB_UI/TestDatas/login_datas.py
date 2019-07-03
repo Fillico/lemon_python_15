@@ -4,7 +4,7 @@
 # date:2019/6/22
 # description:登录的测试数据
 
-from TestDatas.common_datas import base_url
+from FUTURE_WEB_UI.TestDatas.common_datas import base_url
 
 success_data = {"user": "18684720553", "password": "python",
                 "check": "{}Index/index".format(base_url)}

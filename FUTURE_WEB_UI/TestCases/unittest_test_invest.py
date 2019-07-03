@@ -10,14 +10,14 @@ import unittest
 import pytest
 from ddt import ddt, data
 from selenium import webdriver
-from PageObject.index_page import IndexPage
-from PageObject.login_page import LoginPage
-from PageObject.user_page import UserPage
-from TestDatas import common_datas as CD
-from TestDatas import invest_datas as ID
-from TestDatas import login_datas as LD
+from FUTURE_WEB_UI.PageObject.index_page import IndexPage
+from FUTURE_WEB_UI.PageObject.login_page import LoginPage
+from FUTURE_WEB_UI.PageObject.user_page import UserPage
+from FUTURE_WEB_UI.TestDatas import common_datas as CD
+from FUTURE_WEB_UI.TestDatas import invest_datas as ID
+from FUTURE_WEB_UI.TestDatas import login_datas as LD
 
-from PageObject.bid_page import BidPage
+from FUTURE_WEB_UI.PageObject.bid_page import BidPage
 
 
 def test_demo():
