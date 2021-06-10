@@ -3,7 +3,7 @@ cffi==1.11.5
 chardet==3.0.4
 cycler==0.10.0
 ddt==1.2.1
-Django==2.1.5
+Django==2.2.24
 et-xmlfile==1.0.1
 gevent==1.4.0
 greenlet==0.4.15
